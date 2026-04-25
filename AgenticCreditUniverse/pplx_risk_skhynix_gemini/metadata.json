@@ -1,0 +1,40 @@
+{
+  "corp_name": "SK하이닉스",
+  "api": "agent",
+  "endpoint": "https://api.perplexity.ai/v1/responses",
+  "model": "google/gemini-3.1-pro-preview",
+  "generated_utc": "2026-04-24T09:53:33.562802+00:00",
+  "tools_used": [
+    "web_search",
+    "fetch_url"
+  ],
+  "search_queries": [
+    "SK하이닉스 실적 2026",
+    "SK하이닉스 전략 신사업 2026",
+    "SK하이닉스 HBM 2026"
+  ],
+  "search_results_count": 15,
+  "usage": {
+    "cost": {
+      "currency": "USD",
+      "input_cost": 0.01168,
+      "output_cost": 0.01651,
+      "tool_calls_cost": 0.005,
+      "total_cost": 0.03319
+    },
+    "input_tokens": 5838,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1376,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "tool_calls_details": {
+      "search_web": {
+        "invocation": 1
+      }
+    },
+    "total_tokens": 7214
+  }
+}

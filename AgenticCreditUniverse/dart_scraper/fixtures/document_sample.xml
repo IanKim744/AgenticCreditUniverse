@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DOCUMENT>
+  <LIBRARY>
+    <SECTION-1 ACODE="D-0">
+      <TITLE ATOC="Y">Ⅰ. 회사의 개요</TITLE>
+      <P>회사 개요 본문입니다. 더미 텍스트.</P>
+      <SECTION-2 ACODE="D-0-1">
+        <TITLE>1. 회사의 법적·상업적 명칭</TITLE>
+        <P>당사의 법적 명칭은 "더미 주식회사".</P>
+      </SECTION-2>
+    </SECTION-1>
+    <SECTION-1 ACODE="D-1">
+      <TITLE ATOC="Y">Ⅱ. 사업의 내용</TITLE>
+      <P>당사는 메모리 반도체를 제조·판매합니다.</P>
+      <SECTION-2 ACODE="D-1-1">
+        <TITLE>1. 사업의 개요</TITLE>
+        <P>개요 본문 테스트 문장.</P>
+        <TABLE>
+          <TGROUP>
+            <THEAD><ROW><ENTRY>품목</ENTRY><ENTRY>매출</ENTRY></ROW></THEAD>
+            <TBODY><ROW><ENTRY>DRAM</ENTRY><ENTRY>10000</ENTRY></ROW></TBODY>
+          </TGROUP>
+        </TABLE>
+      </SECTION-2>
+      <SECTION-2 ACODE="D-1-2">
+        <TITLE>2. 주요 제품 및 서비스</TITLE>
+        <P>주요 제품 설명 테스트.</P>
+      </SECTION-2>
+    </SECTION-1>
+    <SECTION-1 ACODE="D-2">
+      <TITLE ATOC="Y">Ⅲ. 재무에 관한 사항</TITLE>
+      <SECTION-2 ACODE="D-2-5">
+        <TITLE>5. 재무제표 주석</TITLE>
+        <P>별도 재무제표 주석 본문.</P>
+        <P>유의적 회계정책 설명.</P>
+      </SECTION-2>
+      <SECTION-2 ACODE="D-2-6">
+        <TITLE>6. 연결재무제표에 대한 주석</TITLE>
+        <P>연결 기준 주석 본문입니다.</P>
+        <P>연결 범위 변동 내역 등.</P>
+      </SECTION-2>
+    </SECTION-1>
+  </LIBRARY>
+</DOCUMENT>
