@@ -1,0 +1,22 @@
+{
+  "corp_name": "다우기술",
+  "api": "sonar",
+  "model": "sonar-pro",
+  "temperature": 0.1,
+  "max_tokens": 4000,
+  "endpoint": "https://api.perplexity.ai/chat/completions",
+  "generated_utc": "2026-04-26T07:27:59.040601+00:00",
+  "usage": {
+    "prompt_tokens": 504,
+    "completion_tokens": 647,
+    "total_tokens": 1151,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00151,
+      "output_tokens_cost": 0.00971,
+      "request_cost": 0.006,
+      "total_cost": 0.01722
+    }
+  },
+  "n_citations": 9
+}

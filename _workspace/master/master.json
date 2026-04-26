@@ -1,0 +1,285 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-04-26",
+  "companies": {
+    "에스케이씨": {
+      "corp_code": "00139889",
+      "stock_code": "011790",
+      "official_name": "SKC",
+      "aliases": [
+        "에스케이씨",
+        "SKC"
+      ],
+      "industry": "석유화학",
+      "group": "SK",
+      "notes": "한글 사명 동명이인 비상장사 회피, stock_code 보유 상장사 채택",
+      "cmp_cd": "1783748"
+    },
+    "대한해운": {
+      "corp_code": "00113535",
+      "stock_code": "005880",
+      "official_name": "대한해운",
+      "aliases": [
+        "대한해운"
+      ],
+      "industry": "해운",
+      "group": "",
+      "notes": "동명이인 2건 중 상장사 채택",
+      "cmp_cd": "1766746"
+    },
+    "한솔테크닉스": {
+      "corp_code": "00157399",
+      "stock_code": "004710",
+      "official_name": "한솔테크닉스",
+      "aliases": [
+        "한솔테크닉스"
+      ],
+      "industry": "전기전자",
+      "group": "한솔",
+      "notes": "",
+      "cmp_cd": "1855106"
+    },
+    "다우기술": {
+      "corp_code": "00176914",
+      "stock_code": "023590",
+      "official_name": "다우기술",
+      "aliases": [
+        "다우기술"
+      ],
+      "industry": "IT서비스",
+      "group": "다우키움",
+      "notes": "",
+      "cmp_cd": "1363231"
+    },
+    "롯데물산": {
+      "corp_code": "00120483",
+      "stock_code": "",
+      "official_name": "롯데물산",
+      "aliases": [
+        "롯데물산"
+      ],
+      "industry": "부동산",
+      "group": "롯데",
+      "notes": "",
+      "cmp_cd": "1723301"
+    },
+    "보령(구. 보령제약)": {
+      "corp_code": "00123143",
+      "stock_code": "003850",
+      "official_name": "보령",
+      "aliases": [
+        "보령(구. 보령제약)",
+        "보령",
+        "보령제약"
+      ],
+      "industry": "제약",
+      "group": "보령",
+      "notes": "구 사명: 보령제약; NICE 정식명 '(주)보령' 채택; 동명이인 4건(엘엔지터미널/홀딩스/메디앙스) 회피",
+      "cmp_cd": "1791063"
+    },
+    "부산롯데호텔": {
+      "corp_code": "00124212",
+      "stock_code": "",
+      "official_name": "부산롯데호텔",
+      "aliases": [
+        "부산롯데호텔"
+      ],
+      "industry": "호텔/레저",
+      "group": "롯데",
+      "notes": "",
+      "cmp_cd": "1972529"
+    },
+    "씨제이프레시웨이": {
+      "corp_code": "00127954",
+      "stock_code": "051500",
+      "official_name": "CJ프레시웨이",
+      "aliases": [
+        "씨제이프레시웨이",
+        "CJ프레시웨이"
+      ],
+      "industry": "음식료",
+      "group": "CJ",
+      "notes": "",
+      "cmp_cd": "1795281"
+    },
+    "알씨아이파이낸셜서비스코리아": {
+      "corp_code": "00573551",
+      "stock_code": "",
+      "official_name": "알씨아이파이낸셜서비스코리아",
+      "aliases": [
+        "알씨아이파이낸셜서비스코리아",
+        "RCI Financial Services Korea"
+      ],
+      "industry": "캐피탈",
+      "group": "Renault",
+      "notes": "Renault Korea 자회사",
+      "cmp_cd": "5004183"
+    },
+    "에스케이디스커버리": {
+      "corp_code": "00131832",
+      "stock_code": "006120",
+      "official_name": "SK디스커버리",
+      "aliases": [
+        "에스케이디스커버리",
+        "SK디스커버리"
+      ],
+      "industry": "석유화학",
+      "group": "SK",
+      "notes": "",
+      "cmp_cd": "1854045"
+    },
+    "에스케이스페셜티(구. 에스케이머티리얼즈)": {
+      "corp_code": "01602124",
+      "stock_code": "",
+      "official_name": "에스케이스페셜티",
+      "aliases": [
+        "에스케이스페셜티(구. 에스케이머티리얼즈)",
+        "에스케이스페셜티",
+        "SK스페셜티",
+        "에스케이머티리얼즈",
+        "SK머티리얼즈"
+      ],
+      "industry": "화학",
+      "group": "SK",
+      "notes": "구 사명: 에스케이머티리얼즈/SK머티리얼즈",
+      "cmp_cd": "5204750"
+    },
+    "에스케이실트론": {
+      "corp_code": "00138020",
+      "stock_code": "",
+      "official_name": "SK실트론",
+      "aliases": [
+        "에스케이실트론",
+        "SK실트론"
+      ],
+      "industry": "반도체",
+      "group": "SK",
+      "notes": "비상장 (감사보고서 의무)",
+      "cmp_cd": "1341913"
+    },
+    "에스케이온": {
+      "corp_code": "01592447",
+      "stock_code": "",
+      "official_name": "에스케이온",
+      "aliases": [
+        "에스케이온",
+        "SK온"
+      ],
+      "industry": "2차전지",
+      "group": "SK",
+      "notes": "비상장",
+      "cmp_cd": "5204284"
+    },
+    "에이치라인해운": {
+      "corp_code": "01010660",
+      "stock_code": "",
+      "official_name": "에이치라인해운",
+      "aliases": [
+        "에이치라인해운",
+        "H-Line Shipping",
+        "H-Line"
+      ],
+      "industry": "해운",
+      "group": "",
+      "notes": "",
+      "cmp_cd": "5010828"
+    },
+    "한솔제지": {
+      "corp_code": "01060744",
+      "stock_code": "213500",
+      "official_name": "한솔제지",
+      "aliases": [
+        "한솔제지"
+      ],
+      "industry": "제지",
+      "group": "한솔",
+      "notes": "NICE 정식명 '한솔제지(주)' 채택; 한솔홀딩스 회피",
+      "cmp_cd": "5100862"
+    },
+    "한솔케미칼": {
+      "corp_code": "00140955",
+      "stock_code": "014680",
+      "official_name": "한솔케미칼",
+      "aliases": [
+        "한솔케미칼"
+      ],
+      "industry": "화학",
+      "group": "한솔",
+      "notes": "",
+      "cmp_cd": "1151724"
+    },
+    "한일시멘트": {
+      "corp_code": "01319808",
+      "stock_code": "300720",
+      "official_name": "한일시멘트",
+      "aliases": [
+        "한일시멘트"
+      ],
+      "industry": "시멘트",
+      "group": "한일",
+      "notes": "NICE 정식명 '한일시멘트(주)' 채택; 한일홀딩스 회피",
+      "cmp_cd": "5107957"
+    },
+    "한화리츠": {
+      "corp_code": "01669226",
+      "stock_code": "451800",
+      "official_name": "한화리츠",
+      "aliases": [
+        "한화리츠"
+      ],
+      "industry": "리츠",
+      "group": "한화",
+      "notes": "",
+      "cmp_cd": ""
+    },
+    "현대로템": {
+      "corp_code": "00302926",
+      "stock_code": "064350",
+      "official_name": "현대로템",
+      "aliases": [
+        "현대로템"
+      ],
+      "industry": "기계",
+      "group": "현대차",
+      "notes": "NICE 정식명 '현대로템(주)' 채택; 현대로템제일차(유)(SPC) 회피",
+      "cmp_cd": "1327045"
+    },
+    "현대리바트": {
+      "corp_code": "00300548",
+      "stock_code": "079430",
+      "official_name": "현대리바트",
+      "aliases": [
+        "현대리바트"
+      ],
+      "industry": "가구",
+      "group": "현대백화점",
+      "notes": "",
+      "cmp_cd": ""
+    },
+    "현대비앤지스틸": {
+      "corp_code": "00125743",
+      "stock_code": "004560",
+      "official_name": "현대비앤지스틸",
+      "aliases": [
+        "현대비앤지스틸"
+      ],
+      "industry": "철강",
+      "group": "현대차",
+      "notes": "",
+      "cmp_cd": "1114882"
+    },
+    "에스케이네트웍스서비스": {
+      "corp_code": "00636081",
+      "stock_code": "",
+      "official_name": "SK네트웍스서비스",
+      "aliases": [
+        "에스케이네트웍스서비스",
+        "SK네트웍스서비스"
+      ],
+      "industry": "IT서비스",
+      "group": "SK",
+      "notes": "비상장",
+      "cmp_cd": "5004346"
+    }
+  }
+}

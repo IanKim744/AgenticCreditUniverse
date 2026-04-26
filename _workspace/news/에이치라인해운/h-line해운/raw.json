@@ -1,0 +1,94 @@
+{
+  "id": "56a3cd57-29e3-41a8-9871-73ca7b49248c",
+  "model": "sonar-pro",
+  "created": 1777189245,
+  "usage": {
+    "prompt_tokens": 505,
+    "completion_tokens": 656,
+    "total_tokens": 1161,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.00984,
+      "request_cost": 0.006,
+      "total_cost": 0.01735
+    }
+  },
+  "citations": [
+    "https://www.h-lineshipping.com",
+    "https://blog.naver.com/kobcpr/222884356333",
+    "https://www.h-lineshipping.com/wp-content/themes/hline/assets/images/hline_brochure.pdf",
+    "https://v.daum.net/v/20260413140707617",
+    "https://www.kmi.re.kr/web/board/download.do?rbsIdx=384&idx=1292&fidx=1",
+    "https://dealsite.co.kr/articles/141643",
+    "http://ebiz.heungaline.com"
+  ],
+  "search_results": [
+    {
+      "title": "에이치라인해운",
+      "url": "https://www.h-lineshipping.com",
+      "date": "2025-12-04",
+      "last_updated": "2026-03-17",
+      "snippet": "50년 이상의 전용선 노하우를 바탕으로 국내외 시장에서 신뢰와 명성을 쌓아왔습니다. 우리의 전문성을 강화하기 위해 자체 기술력을 강화하여 고객 가치를 실현하였고",
+      "source": "web"
+    },
+    {
+      "title": "海지니가 다녀왔다! H-LINE 해운_막강해팀 : 네이버 블로그",
+      "url": "https://blog.naver.com/kobcpr/222884356333",
+      "date": "2022-09-26",
+      "last_updated": "2025-06-27",
+      "snippet": "한국해양진흥공사 서포터즈 海지니의 기업탐방 이야기입니다. 해운업계 현장의 이야기를 현직자에게. 직접 들어볼 수 있었던 알찬시간!!!",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] H-LINE - SHIPPING - 에이치라인해운",
+      "url": "https://www.h-lineshipping.com/wp-content/themes/hline/assets/images/hline_brochure.pdf",
+      "snippet": "에이치라인해운은 철광석, 석탄, LNG등 국가기간 원자재 및 에너지를 수송하는 국내 최대 규모의 전용선. 전문선사로서, 안정적 해상화물 운송서비스 제공능력과 자체 기술 ...",
+      "source": "web"
+    },
+    {
+      "title": "[단독]SK해운, 에이치라인해운 LNG선 16척 인수…승무원까지 '고용승계'",
+      "url": "https://v.daum.net/v/20260413140707617",
+      "date": "2026-04-13",
+      "last_updated": "2026-04-14",
+      "snippet": "SK해운이 에이치라인해운 소속 LNG 운반선 16척을 인수하고, 해당 선박에 승선 중인 해상 인력까지 고용 승계하는 대규모 선대 재편에 나선다. 초대형 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] 해상운임에 대한 지정학적 리스크의 전이효과 분석",
+      "url": "https://www.kmi.re.kr/web/board/download.do?rbsIdx=384&idx=1292&fidx=1",
+      "date": "2025-12-31",
+      "snippet": "최근 몇 년간 해운시장은 지정학적 갈등이 반복되면서 큰 변화를 겪어왔다. 국제. 분쟁의 장기화, 주요 항로의 불안정, 경제·외교적 급격한 변화는 ...",
+      "source": "web"
+    },
+    {
+      "title": "[6·3 대선] 해운사 부산 이전 설왕설래…한앤코 '된서리' - 딜사이트",
+      "url": "https://dealsite.co.kr/articles/141643",
+      "date": "2025-05-16",
+      "last_updated": "2026-04-18",
+      "snippet": "공교롭게도 부산 이전설에 휘말린 SK해운과 에이치라인해운(H라인해운)은 한앤코의 해운 포트폴리오라는 공통점을 갖고 있다. 정치권의 표심잡기 전략에 ...",
+      "source": "web"
+    },
+    {
+      "title": "heung a line - 흥아해운",
+      "url": "http://ebiz.heungaline.com",
+      "snippet": "",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\nH-Line해운(에이치라인해운)은 안정적 장기계약 기반의 전용선 사업으로 성장 중이며, 최근 SK해운에 LNG선 16척 매각으로 자금 확보와 사업 재편 호재가 두드러짐[1][2][3][4][6].  \n법적·거버넌스 리스크는 확인되지 않아 악재 비중이 낮음.  \n6개월 내 실적 호조와 전략적 매각으로 투자 매력적이나, 해운업 지정학 리스크 주의[5].\n\n### Critical Risk (거버넌스/법적 리스크)\n**금융당국/수사기관 조사 현황**: 해당 기간 내 검찰, 경찰, 금감원, 공정위, 국세청 관련 조사나 압수수색, 소환조사, 구속영장, 고발, 과징금, 횡령, 배임, 사기, 자본시장법 위반, 분식회계, 중대재해 등 특이사항 없음[1-7]. 오너/경영진(한앤코 관련) 리스크 의혹도 확인되지 않음[6].  \n**주요 소송 및 분쟁**: 소송 관련 정보 없음. 예상 파급력 없음[1-7].  \n*해당 기간 내 특이사항 없음*.\n\n### Business & Financials (영업/재무)\n- **실적 추이 및 특이사항**: 2014년 한진해운 전용선 사업 인수, 2016년 HMM(현대상선) 벌크선 부문 인수로 선대 확대. POSCO, 한국전력, 현대글로비스 등 국내 우량 화주와 장기계약(90% 이상 사선 보유)으로 안정적 수익 기반[2][3][6]. EBITDA 2000억원→6000억원 성장, 순이익 흑자 전환(스팟 비중 축소·장기계약 재편 효과)[6]. LNG 사업 확대 중(연간 운항거리 49만 마일)[2].  \n- **최근 동향**: 2026년 4월 13일 SK해운에 LNG선 16척 인수(승무원 고용승계 포함)로 사업 무게중심 가스선 이동, VLCC 자금 재투자[4]. 한앤코(지분 100%) 포트폴리오로 성장 지속, 부산 이전설 언급되나 확인된 리스크 아님[6]. 지정학적 항로 불안정(해운시장 전체 리스크)이 간접 영향 가능[5].\n\n### Conclusion\n**투자 주의 등급: 낮음 (Buy 추천)**. 법적 리스크 부재와 안정적 실적·LNG 매각 호재로 긍정적. 해운업 사이클 및 지정학 변동성 모니터링 필요[1-7]."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

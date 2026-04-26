@@ -1,0 +1,29 @@
+[
+  {
+    "company": "에스케이씨",
+    "pdf": null,
+    "nice": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/nice/에스케이씨/nicerating_1783748_CFS.json",
+    "dart_business": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/dart/에스케이씨/business.txt",
+    "dart_notes": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/dart/에스케이씨/notes.txt",
+    "news": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/에스케이씨/skc-에스케이씨/report.md",
+    "grade_info": "그룹사: SK"
+  },
+  {
+    "company": "대한해운",
+    "pdf": null,
+    "nice": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/nice/대한해운/nicerating_1766746_CFS.json",
+    "dart_business": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/dart/대한해운/business.txt",
+    "dart_notes": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/dart/대한해운/notes.txt",
+    "news": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/대한해운/대한해운/report.md",
+    "grade_info": "그룹사"
+  },
+  {
+    "company": "한솔테크닉스",
+    "pdf": null,
+    "nice": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/nice/한솔테크닉스/nicerating_1855106_CFS.json",
+    "dart_business": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/dart/한솔테크닉스/business.txt",
+    "dart_notes": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/dart/한솔테크닉스/notes.txt",
+    "news": "/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/한솔테크닉스/한솔테크닉스/report.md",
+    "grade_info": "그룹사: 한솔"
+  }
+]

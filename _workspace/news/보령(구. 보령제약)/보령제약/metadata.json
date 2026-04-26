@@ -1,0 +1,22 @@
+{
+  "corp_name": "보령제약",
+  "api": "sonar",
+  "model": "sonar-pro",
+  "temperature": 0.1,
+  "max_tokens": 4000,
+  "endpoint": "https://api.perplexity.ai/chat/completions",
+  "generated_utc": "2026-04-26T07:29:35.551247+00:00",
+  "usage": {
+    "prompt_tokens": 505,
+    "completion_tokens": 520,
+    "total_tokens": 1025,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.0078,
+      "request_cost": 0.006,
+      "total_cost": 0.01532
+    }
+  },
+  "n_citations": 5
+}

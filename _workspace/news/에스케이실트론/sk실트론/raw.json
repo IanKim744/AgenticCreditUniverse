@@ -1,0 +1,95 @@
+{
+  "id": "d1135ef7-bed0-4cdd-b798-25633343bc5b",
+  "model": "sonar-pro",
+  "created": 1777189083,
+  "usage": {
+    "prompt_tokens": 505,
+    "completion_tokens": 1314,
+    "total_tokens": 1819,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.01971,
+      "request_cost": 0.006,
+      "total_cost": 0.02723
+    }
+  },
+  "citations": [
+    "https://www.sksiltron.com/ko/download/2022_SKSiltron_TCFD.pdf",
+    "https://dealsite.co.kr/articles/149389",
+    "https://v.daum.net/v/BueJEBsACe",
+    "https://www.sksiltron.com/ko/download/2023_SKSiltron_Rights.pdf",
+    "https://blog.naver.com/ibtomato/224071906758?fromRss=true&trackingCode=rss",
+    "https://www.investchosun.com/site/data/html_dir/2025/04/24/2025042480246.html",
+    "https://www.sksiltron.com/ko/download/2022_SKSiltron_Sustainabiliytreport.pdf"
+  ],
+  "search_results": [
+    {
+      "title": "[PDF] PDF 보기 - SK실트론",
+      "url": "https://www.sksiltron.com/ko/download/2022_SKSiltron_TCFD.pdf",
+      "last_updated": "2025-10-11",
+      "snippet": "전사 리스크 관리 체계의 구축과 운영을 담당하며, 기후변화 관련 리스크를. 핵심 리스크(Key Risk) 관리프로세스에 통합하여 모니터링하고, 관리하는. 기능을 주관 ...",
+      "source": "web"
+    },
+    {
+      "title": "[SK실트론 M&A] 총수 이혼리스크 1.3조…지배구조 지켜낼 29.4%",
+      "url": "https://dealsite.co.kr/articles/149389",
+      "date": "2025-10-14",
+      "last_updated": "2026-04-26",
+      "snippet": "SK가 처음 매각을 추진할 당시에는 SK㈜가 보유한 지분 51%와 총수익스와프(TRS) 계약으로 묶인 지분 19.6%를 합친 경영권 지분 약 70%만 지목됐다. 하지만 ...",
+      "source": "web"
+    },
+    {
+      "title": "SK실트론 품는 두산...수익성 우려 속 노조 리스크까지 '첩첩산중' - Daum",
+      "url": "https://v.daum.net/v/BueJEBsACe",
+      "date": "2026-04-20",
+      "last_updated": "2026-04-21",
+      "snippet": "여기에 SK실트론까지 편입될 경우 소재부터 공정 전반으로 사업 영역이 확대되며 두산의 반도체 포트폴리오도 한층 안정적으로 구축될 것이란 관측이다.",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] SK실트론 인권경영보고서 2023",
+      "url": "https://www.sksiltron.com/ko/download/2023_SKSiltron_Rights.pdf",
+      "last_updated": "2025-10-20",
+      "snippet": "SK실트론은 실재적‧잠재적 인권 리스크를 도출하기 위해. 정기적으로 인권영향평가를 실시하고 있습니다. 지표는. OECD, UNGP, UNGC, RBA, ILO 가이드라인 등 국제 인. 권 ...",
+      "source": "web"
+    },
+    {
+      "title": "SK실트론 두고 엇갈린 명암…SK는 '신중' vs 두산은 '올인' - Naver Blog",
+      "url": "https://blog.naver.com/ibtomato/224071906758?fromRss=true&trackingCode=rss",
+      "date": "2025-11-11",
+      "last_updated": "2025-11-18",
+      "snippet": "SK실트론은 12인치 웨이퍼 기준 세계 시장 점유율 3위의 반도체 소재 기업이다. 지난 2017년 SK가 LG(003550)로부터 인수한 이후 꾸준히 이익을 내고 있는 ...",
+      "source": "web"
+    },
+    {
+      "title": "SK실트론, 파는 쪽도 사는 쪽도 부담…주주간계약 등 원매자가 제안 ...",
+      "url": "https://www.investchosun.com/site/data/html_dir/2025/04/24/2025042480246.html",
+      "date": "2025-04-25",
+      "last_updated": "2026-04-20",
+      "snippet": "SK그룹은 SK실트론 경영권 지분을 매각하기 위한 검토에 들어갔다. 매각을 위해 투자은행(IB)은 고용하지 않지만 삼일회계법인, 법무법인 태평양 등이 힘 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] SK SILTRON SUSTAINABILITY REPORT 2022 - SK실트론",
+      "url": "https://www.sksiltron.com/ko/download/2022_SKSiltron_Sustainabiliytreport.pdf",
+      "snippet": "SK실트론은 탄소중립(Net Zero)을 통한 지속가능한 성장을 위해. 친환경 제조 환경을 구축하고 있습니다. 온실가스 배출량을 최대한 줄이기 위해 공정개선을 통한 에너지 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "# SK실트론 리스크 분석 보고서\n\n## Executive Summary\n\nSK실트론은 세계 3위 웨이퍼 제조사로서 안정적인 수익성(연간 EBITDA 6,000~7,000억원)을 유지하고 있으나, **경영권 매각 추진 과정에서 발생한 오너 개인의 법적 리스크(이혼 소송으로 인한 1조 3,000억원 재산분할)가 기업 지배구조에 직결되는 상황**이 주요 악재다. 추가적으로 기후변화 규제 강화에 따른 탄소비용 부담 증가와 높은 부채비율(160.7%)이 중기 재무 리스크로 작용하고 있다.\n\n---\n\n## Critical Risk (거버넌스/법적 리스크)\n\n### 1. 오너 개인 법적 리스크 → 기업 지배구조 영향\n\n**최태원 SK그룹 회장 이혼 소송**[2]\n- **사건 현황**: 2심에서 확정된 1조 3,000억원대 재산분할금이 대법원 최종 판단 대기 중\n- **기업에 미치는 영향**: 최 회장이 보유한 SK실트론 지분 29.4%(약 2조원 규모)의 현금화 불가피\n- **지배구조 변동**: 당초 경영권 지분 70% 매각 계획이 100% 근처 규모로 확대될 가능성[2]\n- **예상 파급력**: 경영권 이전에 따른 경영 공백 및 전략 변화 위험\n\n### 2. 경영권 매각 추진 과정의 불확실성\n\n**매각 추진 현황**[5][6]\n- SK그룹이 2026년 초부터 추진하던 SK실트론 매각을 전면 재검토 중\n- 맥킨지앤컴퍼니에 기업가치 재평가 의뢰, SK하이닉스와의 중장기 전략 재구상 검토 중\n- 현재 투자은행(IB) 미고용 상태로 공식 매각 프로세스 미진행\n\n**매각 지연의 배경**[5]\n- 최 회장의 사법 리스크 완화 대기\n- SK하이닉스 수익성 개선에 따른 그룹 차원의 전략 재평가\n\n### 3. 인수자 측 재무 리스크 (두산그룹)\n\n**두산의 자금 조달 한계**[3]\n- 계열사 지분 담보대출 등으로 약 1조원대 현금 확보했으나, 인수가 충당에 부족\n- SK실트론 자체 부채비율 160.7%, 차입금 의존도 45.5%로 높은 상태\n- 인수 후 차입 규모 관리 및 유동성 부담 완화가 주요 과제\n\n**해당 기간 내 검찰/금감원/공정위 조사 특이사항**: 없음\n\n---\n\n## Business & Financials (영업/재무)\n\n### 1. 실적 현황\n\n**수익성**[2][3]\n- 연간 EBITDA: 6,000~7,000억원대 (알짜 자회사로 평가)\n- 세계 12인치 웨이퍼 기준 시장점유율 3위 유지\n- 2017년 LG로부터 인수 이후 꾸준한 이익 창출\n\n### 2. 중기 재무 리스크\n\n**탄소규제 강화에 따른 원가 상승**[1]\n- SK실트론이 직면한 **가장 큰 전환 리스크**: 온실가스 감축 규제 정책 강화에 따른 직간접 탄소비용 부담\n- 배출권 구매 및 탄소세 부담 증가 예상\n- TCFD 평가 결과 중대 이슈(4점 이상)로 분류\n\n**높은 부채 의존도**[3]\n- 부채비율 160.7%, 차입금 의존도 45.5%\n- 설비 투자 수요 지속으로 인한 자본 소요 증가\n\n### 3. 외부 환경 리스크\n\n**글로벌 관세전쟁 및 중국 리스크**[6]\n- 중국의 반도체 소비 감소 가능성\n- 중국의 자체 웨이퍼 생산 진출에 따른 시장 경쟁 심화 우려\n- 중장기 성장 가능성 존재하나 설비 투자비 부담 증가\n\n### 4. 노조 리스크\n\n**노조 갈등**[3]\n- 두산 인수 과정에서 노조 리스크 대두\n- 인수 후 경영 안정성 저해 가능성\n\n---\n\n## Conclusion\n\n**투자 주의 등급: ⚠️ 높음 (High Caution)**\n\nSK실트론은 안정적인 수익성과 글로벌 시장 지위를 보유한 우량 자산이나, 다음의 복합적 리스크가 존재한다:\n\n1. **거버넌스 리스크 (즉시)**: 오너 이혼 소송에 따른 지배구조 변동 불확실성이 경영 공백으로 이어질 가능성\n2. **전략 불확실성 (단기)**: 경영권 매각 추진 → 재검토 → 재추진의 반복으로 인한 경영 방향성 모호\n3. **재무 리스크 (중기)**: 높은 부채비율과 탄소규제 강화에 따른 원가 상승 압력\n4. **시장 리스크 (중장기)**: 글로벌 관세전쟁 및 중국 경쟁 심화\n\n**투자 의사결정 시 고려사항**: 경영권 이전 완료 시점, 신규 경영진의 전략 방향, 탄소중립 투자 계획의 구체성, 부채 감축 로드맵 등을 면밀히 모니터링할 필요가 있다."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

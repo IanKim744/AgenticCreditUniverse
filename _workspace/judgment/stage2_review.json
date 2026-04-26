@@ -1,0 +1,74 @@
+{
+  "decisions": {
+    "대한해운": {
+      "final": "O",
+      "stage1": "O",
+      "prior_25_2h": "△",
+      "movement": "upgrade",
+      "adjusted": false,
+      "rationale": "부채비율 70%, 순차입금/EBITDA 3.2배로 레버리지 지속 개선되어 재무 건전성이 양호하며, 단기등급 A3+ 수준에서 무조건부 편입 요건 충족. 직전 △에서 O로 상향하되 업황 모니터링은 지속."
+    },
+    "에스케이씨": {
+      "final": "△",
+      "stage1": "X",
+      "prior_25_2h": "△",
+      "movement": "stay",
+      "adjusted": true,
+      "rationale": "EBIT 3년 연속 적자·부채비율 233%·FCF 만성 적자로 stage1에서 X를 제안하였으나, 가드레일 적용 — 하향 비중 한도 준수: 하향 비중 초과를 방지하기 위해 직전 분류(△) 유지. A0/안정적 등급은 유지되고 있어 단기물 한정 편입은 허용."
+    },
+    "한솔테크닉스": {
+      "final": "△",
+      "stage1": "△",
+      "prior_25_2h": "O",
+      "movement": "downgrade",
+      "adjusted": false,
+      "rationale": "BBB+/안정적으로 등급 자체는 유지되나 부채비율 102%로 재확대, EBIT 204억·순이익 6억으로 수익성 급감, 총차입금/EBITDA 3.8배로 레버리지 재확대되어 무조건부 편입 기준 미달. 1년 이내 단기물에 한해 조건부 편입으로 하향 조정."
+    }
+  },
+  "inversions": [
+    {
+      "high_grade_company": "에스케이씨",
+      "high_grade": "A0/S",
+      "high_grade_decision": "△",
+      "low_grade_company": "대한해운",
+      "low_grade": "A3+/null",
+      "low_grade_decision": "O",
+      "rationale": "에스케이씨는 A0로 등급이 높으나 EBIT 3년 연속 적자·부채비율 233%·FCF 만성 적자로 재무 구조가 심각하게 손상되어 △에 그침. 대한해운은 A3+(단기) 등급이나 부채비율 70%·레버리지 지속 개선 등 재무 건전성이 양호하여 O로 역전 허용(R2 적용)."
+    }
+  ],
+  "metrics": {
+    "denominator": 3,
+    "downgrade_count": 1,
+    "downgrade_pct": 0.333,
+    "upgrade_count": 1,
+    "upgrade_pct": 0.333,
+    "new_entries": 0,
+    "guardrail_breaches": [
+      {
+        "type": "downgrade",
+        "raw_pct": 0.667,
+        "adjusted_count": 1
+      },
+      {
+        "type": "post_call_sanity",
+        "detail": "downgrade_pct=0.333 > 0.10"
+      },
+      {
+        "type": "post_call_sanity",
+        "detail": "upgrade_pct=0.333 > 0.10"
+      }
+    ]
+  },
+  "model": "claude-sonnet-4-6",
+  "stop_reason": "end_turn",
+  "usage": {
+    "input_tokens": 2994,
+    "output_tokens": 960,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3307
+  },
+  "_meta": {
+    "retried": true,
+    "parse_failures": []
+  }
+}

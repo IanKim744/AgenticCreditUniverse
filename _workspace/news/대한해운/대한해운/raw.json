@@ -1,0 +1,80 @@
+{
+  "id": "41f8cf0f-92a8-48bf-bcd2-d413a82cfc3e",
+  "model": "sonar-pro",
+  "created": 1777090073,
+  "usage": {
+    "prompt_tokens": 504,
+    "completion_tokens": 568,
+    "total_tokens": 1072,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00151,
+      "output_tokens_cost": 0.00852,
+      "request_cost": 0.006,
+      "total_cost": 0.01603
+    }
+  },
+  "citations": [
+    "https://www.youtube.com/watch?v=T0pOKbTscTI",
+    "https://www.youtube.com/watch?v=xAOAsVztDJ0",
+    "https://www.youtube.com/watch?v=y62uNOY0y68",
+    "https://www.kmi.re.kr/web/trebook/download.do?rbsIdx=142&idx=516&_o_f=3rasA9PYayfyW%252bP1GVGqiKZNuFaUns4BozxvOXzHOgk%3D&_o_o=jilf9%252bvLY3JgRPlyySq3DlNxim2WNUavBmNooU1m4OqGpFkGAP0Bjn%2FNHTBelw9Z&itemId=saved_pdf_file_name",
+    "https://www.cello-square.com/kr/blog/view-213.do"
+  ],
+  "search_results": [
+    {
+      "title": "대한해운 진짜 하락 원인은? 주가 급락 이유와 향후 전망 ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=T0pOKbTscTI",
+      "date": "2026-04-13",
+      "last_updated": "2026-04-24",
+      "snippet": "대한해운 하락의 진짜 이유는? 급락을 이끈 원인 분석 경제매거진 커뮤니티 입장: https://forms.gle/oPSZW3b2rC8ChN169 대한해운의 최근 주가 하락 ...",
+      "source": "web"
+    },
+    {
+      "title": "대한해운 주가전망 이란 리스크 해운 운임 폭증에 대규모 호재 쏟아 ...",
+      "url": "https://www.youtube.com/watch?v=xAOAsVztDJ0",
+      "date": "2026-03-08",
+      "last_updated": "2026-04-10",
+      "snippet": "010-2648-4245 \" 해운 \" 문자 꼭 남겨주세요! ✓ 실시간 시장 이슈 종목 소개 ✓ 시장 분석/전망 본 채널에서 영상을 통해 소개해드리는 종목은 '정보 ...",
+      "source": "web"
+    },
+    {
+      "title": "대한해운 주가전망 이란 리스크 단기 과매도 끝?! 해운 운임 폭증에 ...",
+      "url": "https://www.youtube.com/watch?v=y62uNOY0y68",
+      "date": "2026-03-04",
+      "last_updated": "2026-04-10",
+      "snippet": "010-2648-4245 \" 해운 \" 문자 꼭 남겨주세요! ✓ 실시간 시장 이슈 종목 소개 ✓ 시장 분석/전망 본 채널에서 영상을 통해 소개해드리는 종목은 '정보 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] Ⅰ. 주간뉴스 ································02 Ⅱ. 건화물선 ···········",
+      "url": "https://www.kmi.re.kr/web/trebook/download.do?rbsIdx=142&idx=516&_o_f=3rasA9PYayfyW%252bP1GVGqiKZNuFaUns4BozxvOXzHOgk%3D&_o_o=jilf9%252bvLY3JgRPlyySq3DlNxim2WNUavBmNooU1m4OqGpFkGAP0Bjn%2FNHTBelw9Z&itemId=saved_pdf_file_name",
+      "date": "2025-02-17",
+      "snippet": "- 해운시장분석기관 시그널(Signal) 또한 주요 원자재의 선적량이 증가하는 움직임을 보이고 있으나, 케이프선. 시장의 선박 공급이 여전히 과잉 상태 ...",
+      "source": "web"
+    },
+    {
+      "title": "불확실성이 뉴노멀인 시대, 해운기업의 리스크 관리 전략 | 첼로 스퀘어",
+      "url": "https://www.cello-square.com/kr/blog/view-213.do",
+      "date": "2022-08-04",
+      "last_updated": "2026-04-14",
+      "snippet": "운영(산업) 리스크는 해운 산업(시장)의 변화에 영향을 미치는 거시경제의 환경 변화와 IT 시스템, 테러와 해적 행위, 숙련된 선원의 확보, 국제적인 선박 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\n대한해운은 지정학적 리스크(이란·중동 긴장)로 인한 해운 운임 변동성 확대와 물동량 감소가 주가 급락의 주요 원인으로 지목됨[1][2][3].  \n호재(운임 상승 기대, 저평가 PBR 0.2 수준)와 악재(지정학 리스크, 투매 강화)의 비중은 악재 70%로 우세하며, 단기 반등 가능성 존재[1][2][3].  \n법적·거버넌스 리스크는 검색 결과에서 확인되지 않음.\n\n### Critical Risk (거버넌스/법적 리스크)\n**금융당국/수사기관 조사 현황**: 해당 기간 내 특이사항 없음 (검찰/경찰/금감원/공정위/국세청, 압수수색/소환조사/구속영장/고발/과징금 관련 결과 없음).  \n**주요 소송 및 분쟁**: 해당 기간 내 특이사항 없음 (횡령/배임/사기/자본시장법/분식회계/중대재해, 오너/경영진 관련 리스크/의혹/논란 결과 없음).  \n*6개월 시계열 추적 결과, 법적 사건 진행 경과 없음.*\n\n### Business & Financials (영업/재무)\n- **실적 추이 및 특이사항**: 최근 주가 급락은 해운 업계 불안정성(물동량 감소, 운임 하락), 세계 경제 불확실성으로 분석되며, 지정학적 리스크(이란·호르무즈 해협 봉쇄 우려)로 운임 스파이크 후 조정 반복[1][2][3].  \n- 케이프선 시장에서 선박 공급 과잉 지속, 원자재 선적량 증가에도 불구하고 불안정[4].  \n- 저평가 상태(PBR 0.2)로 운임 회복 시 반등 잠재력 있으나, 산업 리스크(거시경제 변화, IT·테러·해적·인력 확보) 상존[1][5].\n\n### Conclusion\n**투자 주의 등급: 중간 (Hold with Caution)** – 법적 리스크 부재로 거버넌스 안정적이나, 지정학·운임 변동성으로 단기 불확실성 높음; 물동량 회복 모니터링 필요[1][2][3]."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

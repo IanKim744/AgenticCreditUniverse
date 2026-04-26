@@ -1,0 +1,22 @@
+{
+  "corp_name": "한솔제지",
+  "api": "sonar",
+  "model": "sonar-pro",
+  "temperature": 0.1,
+  "max_tokens": 4000,
+  "endpoint": "https://api.perplexity.ai/chat/completions",
+  "generated_utc": "2026-04-26T07:42:01.184852+00:00",
+  "usage": {
+    "prompt_tokens": 505,
+    "completion_tokens": 614,
+    "total_tokens": 1119,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.00921,
+      "request_cost": 0.006,
+      "total_cost": 0.01673
+    }
+  },
+  "n_citations": 9
+}

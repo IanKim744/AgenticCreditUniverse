@@ -1,0 +1,22 @@
+{
+  "corp_name": "현대로템",
+  "api": "sonar",
+  "model": "sonar-pro",
+  "temperature": 0.1,
+  "max_tokens": 4000,
+  "endpoint": "https://api.perplexity.ai/chat/completions",
+  "generated_utc": "2026-04-26T07:47:37.015390+00:00",
+  "usage": {
+    "prompt_tokens": 504,
+    "completion_tokens": 693,
+    "total_tokens": 1197,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00151,
+      "output_tokens_cost": 0.01039,
+      "request_cost": 0.006,
+      "total_cost": 0.01791
+    }
+  },
+  "n_citations": 9
+}

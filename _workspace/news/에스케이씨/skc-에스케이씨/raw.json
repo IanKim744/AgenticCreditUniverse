@@ -1,0 +1,115 @@
+{
+  "id": "43edd51a-366c-4646-9da6-0f2d977d0e80",
+  "model": "sonar-pro",
+  "created": 1777090067,
+  "usage": {
+    "prompt_tokens": 509,
+    "completion_tokens": 819,
+    "total_tokens": 1328,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00153,
+      "output_tokens_cost": 0.01229,
+      "request_cost": 0.006,
+      "total_cost": 0.01981
+    }
+  },
+  "citations": [
+    "https://theme.royalroader.co.kr/stock_analysis/011790",
+    "https://ygdata.kr/article/1065620632859768",
+    "https://www.investchosun.com/site/data/html_dir/2026/03/04/2026030480135.html",
+    "https://contents.premium.naver.com/psythinktank/thinktank/contents/260408113142150oq",
+    "https://www.judal.co.kr/?view=stockAI&shareToken=MU4dfes4R9T7MgDq",
+    "https://kr.investing.com/equities/skc-opinion",
+    "https://prime-career.com/series_article/314",
+    "https://m.finance.daum.net/quotes/A011790/talks/13514090",
+    "https://www.youtube.com/watch?v=_EhLflQbkQU"
+  ],
+  "search_results": [
+    {
+      "title": "SKC 리스크 분석",
+      "url": "https://theme.royalroader.co.kr/stock_analysis/011790",
+      "last_updated": "2026-04-23",
+      "snippet": "종합 리스크 지수 · 위험 지수 유의사항: 지수가 높다고 해서 반드시 주가가 하락하는 것은 아니며, 낮다고 해서 리스크가 전혀 없음을 보장하지 않습니다. · 참고 자료 전용 ...",
+      "source": "web"
+    },
+    {
+      "title": "[심층분석] SKC, ′사업 구조 전환′에 재무 지표 적신호      신용등급",
+      "url": "https://ygdata.kr/article/1065620632859768",
+      "date": "2025-07-02",
+      "last_updated": "2026-02-22",
+      "snippet": "SKC의 수익성 지표는 2023년 적자 전환한 뒤 회복세를 보이지 못하고 있다. 2022년 연결 기준 1862억원이었던 영업이익은 2023년 -2137억원, 2024년 -2768 ...",
+      "source": "web"
+    },
+    {
+      "title": "1조 유증 SKC, 그룹 지원 의지 재확인했지만 타이밍은 갸웃",
+      "url": "https://www.investchosun.com/site/data/html_dir/2026/03/04/2026030480135.html",
+      "date": "2026-03-04",
+      "last_updated": "2026-03-31",
+      "snippet": "SKC가 1조원 규모 유상 ... 또 차입금 감축을 통한 이자 부담 완화, 유동성 리스크 축소 등은 단기 신용도 방어에 우호적이라는 분석이 뒤따른다.",
+      "source": "web"
+    },
+    {
+      "title": "[종목 분석] SKC 체질변신을 위한 변화 중, 하지만 반도체 시장의 현실 ...",
+      "url": "https://contents.premium.naver.com/psythinktank/thinktank/contents/260408113142150oq",
+      "date": "2026-04-08",
+      "last_updated": "2026-04-20",
+      "snippet": "주요 종속회사인 ISC의 테스트 소켓이 글로벌 점유율을 바탕으로 필수 공급되고 있으나, 패키징 기술 변화에 따른 교체 주기 변동 리스크가 존재한다.",
+      "source": "web"
+    },
+    {
+      "title": "SKC 투자분석 2026. 04. 10 - 주달",
+      "url": "https://www.judal.co.kr/?view=stockAI&shareToken=MU4dfes4R9T7MgDq",
+      "date": "2026-04-10",
+      "last_updated": "2026-04-16",
+      "snippet": "현재는 뚜렷한 매수 시그널이 약하며, 관망하며 주가의 방향성을 확인하거나, 매수 시에는 분할 매수 전략으로 리스크를 관리하는 것이 좋습니다. 매수: ...",
+      "source": "web"
+    },
+    {
+      "title": "SKC (011790) 주식 분석 & 의견",
+      "url": "https://kr.investing.com/equities/skc-opinion",
+      "date": "2023-11-06",
+      "last_updated": "2025-06-07",
+      "snippet": "리스크 고지: 금융 상품 및/또는 가상화폐 거래는 투자액의 일부 또는 전체를 상실할 수 있는 높은 리스크를 동반하며, 모든 투자자에게 적합하지 않을 수 있습니다.",
+      "source": "web"
+    },
+    {
+      "title": "SKC 분석 | 한국투자PE 포트폴리오 - 프라임 커리어",
+      "url": "https://prime-career.com/series_article/314",
+      "date": "2025-01-01",
+      "last_updated": "2025-12-04",
+      "snippet": "SKC 분석 · 1. 교환사채 구조를 활용한 대형 첨단소재 투자 · 2. SKC 기업 개요 및 시장 포지셔닝 · 3. 투자 구조 및 규모 · 4. 투자 후 벨류업 전략과 주요 리스크 · 5. 해외 ...",
+      "source": "web"
+    },
+    {
+      "title": "SKC 기업분석 박수진 - 다음 금융",
+      "url": "https://m.finance.daum.net/quotes/A011790/talks/13514090",
+      "date": "2025-01-22",
+      "snippet": "또한, SKC는 지속가능경영보고서를 통해 기후변화 대응 및 공급망 관리 등 다양한 재무적 리스크를 관리하고 있습니다. 이는 회사의 장기적인 재무 건전성 ...",
+      "source": "web"
+    },
+    {
+      "title": "SKC 주가 전망: 컨퍼런스콜에서 밝힌 자신감⭕️ 집중 분석 (SK넥실 ...",
+      "url": "https://www.youtube.com/watch?v=_EhLflQbkQU",
+      "date": "2025-12-19",
+      "last_updated": "2026-04-23",
+      "snippet": "... SKC를 분석합니다. 글라스기판은 분명히 뛰어난 수익성이 있고 SKC ... 리스크가 있는 주식투자에 대한 책임을 제가 지는 것이 아님을 설명란에 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\nSKC는 이차전지·반도체 사업 전환 과정에서 지속적 영업적자와 고부채로 재무 리스크가 고조되어 있으며, 최근 1조원 유상증자로 그룹 지원을 확인했으나 수익성 회복이 지연 중이다[1][2][3].  \n악재(재무 악화, 유증 희석 리스크)가 호재(자본 확충, 그룹 지원)를 압도하며, 6개월 내 신용등급 하향과 적자 누적이 주요 우려사항이다[2][3][4].  \n투자 관점에서 단기 유동성 개선 가능성에도 불구하고 장기 체질 개선 불확실성이 크다.\n\n### Critical Risk (거버넌스/법적 리스크)\n해당 기간 내 **금융당국/수사기관 조사 현황: 특이사항 없음**. SKC, 검찰/경찰/금감원/공정위/국세청 관련 소송·조사 뉴스 미발견(6개월 시계열 추적 결과)[1~9].  \n**주요 소송 및 분쟁: 특이사항 없음**. 오너/경영진(예: SK그룹 관련) 리스크/의혹/논란 키워드 조합 검색에서도 횡령/배임/사기/자본시장법/분식회계/중대재해 등 법적 이슈 부재[1~9].  \n*단, 유상증자 신규상장(보호예수) 공시로 잠재적 물량 부담(Dilution Risk) 100% 지수 기록, DART 원문 확인 권장*[1].\n\n### Business & Financials (영업/재무)\n- **실적 추이**: 2022년 영업이익 1862억원 → 2023년 -2137억원 → 2024년 -2768억원 → 2025년 1Q -745억원으로 4년 연속 적자 지속, 누적 영업적자 확대[2][3][4]. 변동 요인: 이차전지·반도체 구조 전환 투자 부담, 공급과잉·단가 하락(중국 경쟁), 유럽 탄소 규제 완화, 동박 사업 업황 지연[2][4].  \n- **재무 특이사항**: 순차입금 3조1120억원(2025 1Q), 부채비율 208.1~232.7%, 자본 잠식 위험(2025 말 결손금 505억원)[2][3][4]. 신용등급 하향(A+ 부정적 → A 안정적, 2025년 6~12월)[2][3]. 1조원 유상증자로 순차입금 4110억원 감소·부채비율 142.2% 예상, 그러나 OCF 미회복으로 지속 가능성 의문[3].  \n- **사업 전략**: 이차전지 소재(동박)·반도체(테스트 소켓 via ISC) 집중, 패키징 기술 변화·저성장(2026 성장률 2.0~3.3%) 리스크 존재[4].\n\n### Conclusion\n**투자 주의 등급: 고위험 (High Risk)**. 재무 건전성 악화와 유증 희석에도 불구하고 법적 리스크 부재하나, 영업적자 고착화·수익성 회복 지연으로 단기 관망 권고, 분할 매수 전략 고려[1][2][3][5]."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

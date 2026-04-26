@@ -1,0 +1,80 @@
+{
+  "id": "b6c4d71e-23d4-4913-9a15-2a522784834e",
+  "model": "sonar-pro",
+  "created": 1777189744,
+  "usage": {
+    "prompt_tokens": 505,
+    "completion_tokens": 728,
+    "total_tokens": 1233,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.01092,
+      "request_cost": 0.006,
+      "total_cost": 0.01843
+    }
+  },
+  "citations": [
+    "https://v.daum.net/v/20260309064628159",
+    "https://biz.newdaily.co.kr/site/data/html/2026/02/10/2026021000146.html",
+    "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250318001694&docno=&viewerhost=",
+    "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240516000861&docno=&viewerhost=",
+    "https://w4.kirs.or.kr/download/research/240925_%ED%98%84%EB%8C%80%EB%A6%AC%EB%B0%94%ED%8A%B8.pdf"
+  ],
+  "search_results": [
+    {
+      "title": "중동 상황 불확실성에 현대리바트, 프로젝트 수주 '촉각' - Daum",
+      "url": "https://v.daum.net/v/20260309064628159",
+      "date": "2026-03-09",
+      "last_updated": "2026-03-09",
+      "snippet": "우상향 추세는 지난해에 꺾였다. 회사 IR자료에 따르면 지난해 현대리바트의 해외가설 사업 매출은 285억 원으로 전년(1126억 원) 대비 74.7% 급감했다.",
+      "source": "web"
+    },
+    {
+      "title": "한샘·현대리바트 가구 빅2, 건설업 불황에 “올해도 쉽지 않다”",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2026/02/10/2026021000146.html",
+      "date": "2026-02-10",
+      "last_updated": "2026-03-05",
+      "snippet": "가구업계 빅2인 한샘과 현대리바트가 지난해 부진한 실적을 기록했다. 양사는 위기 극복을 위해 다양한 전략을 시도하고 있지만 건설업계 불황이 지속 ...",
+      "source": "web"
+    },
+    {
+      "title": "[현대리바트] [정정]사업보고서(일반법인) - 상장공시시스템(KIND)",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250318001694&docno=&viewerhost=",
+      "date": "2025-03-18",
+      "last_updated": "2026-03-13",
+      "snippet": "주식회사 현대리바트 및 그 종속회사는 연결기준 가구 부문과 B2B 부문 해외 자회사로 구성되어 있으며, 가구부문은 B2C가구, 사무용가구, 빌트인가구, ...",
+      "source": "web"
+    },
+    {
+      "title": "[현대리바트] 분기보고서(일반법인)",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20240516000861&docno=&viewerhost=",
+      "date": "2024-05-16",
+      "last_updated": "2024-12-22",
+      "snippet": "1. 사업의 개요 ; 가구. 부문 · 사무용가구, 사무환경에 사용하는 가구 및 공간 구성 등 ; 가구. 부문 · 빌트인가구, 주로 건설업체의 신규주택(아파트 등)을 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] 현대리바트(079430) - 한국IR협의회",
+      "url": "https://w4.kirs.or.kr/download/research/240925_%ED%98%84%EB%8C%80%EB%A6%AC%EB%B0%94%ED%8A%B8.pdf",
+      "date": "2024-09-25",
+      "snippet": "인테리어∙라이프 전문잡지 더리빙에서. 2023년 12월 8일부터 14일까지 3,160명의 일반 소비자 대상으로 실시한 설문조사에서 '인테리어, 리모델링을 진행.",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\n현대리바트는 가구·인테리어 시장 침체와 건설업 불황으로 2025년 실적 부진(매출 17.3%↓, 영업이익 34.6%↓)을 기록했으나, 중동 B2B 프로젝트 확대를 통해 회복 모색 중[1][2].  \n법적·거버넌스 리스크는 검색 기간(2025.10~2026.4) 내 확인되지 않아 안정적이나, 중동 지정학적 불확실성이 신규 수주 차질로 재무 압박 요인[1].  \n호재(사업 다각화) 대비 악재(업황·지정학) 비중이 3:7으로, 단기 투자 주의 필요.\n\n### Critical Risk (거버넌스/법적 리스크)\n**해당 기간 내 특이사항 없음.**  \n- 금융당국(금감원)/수사기관(검찰·경찰·공정위·국세청) 조사, 압수수색·소환조사·구속영장·고발·과징금, 횡령·배임·사기·자본시장법·분식회계·중대재해 관련 뉴스나 공시 미확인.  \n- 오너/경영진(예: 현대 계열 경영진) 리스크·의혹·논란 사례 없음.  \n- 주요 소송 및 분쟁: 공시(사업보고서·분기보고서)에서 소송 가액·분쟁 관련 언급 없음[3][4].\n\n### Business & Financials (영업/재무)\n- **실적 추이**: 2025년 매출 1조5462억원(전년比 17.3%↓), 영업이익 157억원(34.6%↓). 주요 변동 요인: 건설·주택 경기 침체(입주물량 감소), 소비 위축(B2C·B2B 동시 타격), 고환율 원자재 가격 상승[2]. 해외 가설 사업 매출도 2025년 285억원(전년 1126억원比 74.7%↓)[1].  \n- **경영 전략 및 특이사항**: 토탈 인테리어 '리바트 집테리어' 강화('더 룸' 패키지 론칭), 매장 275→300개점 확대, 원가 관리·비용 절감 추진. 중동 B2B 확대(이라크 바스라 1178억원 수주, 추가 2곳 목표)이나 중동 사태(카타르 에너지 생산 중단)로 프로젝트 차질 우려[1][2]. 호스피탈리티 분야 진출 계획[2]. 소비자 설문에서 인테리어 선호도 긍정적(2023년 조사)[5].\n\n### Conclusion\n**투자 주의 등급: 중간(황색)**. 법적 리스크 부재로 거버넌스 안정적이지만, 업황 부진과 중동 불확실성으로 단기 실적 회복 어려움. 장기 B2B 다각화 성공 여부 관찰 필요."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

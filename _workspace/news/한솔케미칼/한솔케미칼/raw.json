@@ -1,0 +1,90 @@
+{
+  "id": "25bf6f00-2e61-4ae7-a79c-ca2496bc3e27",
+  "model": "sonar-pro",
+  "created": 1777189408,
+  "usage": {
+    "prompt_tokens": 507,
+    "completion_tokens": 773,
+    "total_tokens": 1280,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.0116,
+      "request_cost": 0.006,
+      "total_cost": 0.01912
+    }
+  },
+  "citations": [
+    "https://blog.naver.com/son__star/224167913774",
+    "https://v.daum.net/v/9nUTxSpXyO",
+    "https://citrusshell.tistory.com/entry/%ED%95%9C%EC%86%94%EC%BC%80%EB%AF%B8%EC%B9%BC-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-14-%ED%8F%AD%EB%9D%BD%EC%97%90%EB%8F%84-%EB%AA%A9%ED%91%9C%EC%A3%BC%EA%B0%80-%EC%83%81%ED%96%A5%EB%90%9C-%EC%9D%B4%EC%9C%A0-%EC%A7%80%EA%B8%88%EC%9D%B4-%EB%A7%A4%EC%88%98-%EC%A0%81%EA%B8%B0%EC%9D%BC%EA%B9%8C",
+    "https://www.judal.co.kr/?view=stockAI&shareToken=Ud0172v0wIdPlqch",
+    "https://www.catch.co.kr/Comp/AnalysisCompView?ID=4036",
+    "https://marketin.edaily.co.kr/News/Read?newsId=04933126645318048"
+  ],
+  "search_results": [
+    {
+      "title": "한솔케미칼 주가 전망 : 네이버 블로그",
+      "url": "https://blog.naver.com/son__star/224167913774",
+      "date": "2026-02-01",
+      "last_updated": "2026-03-24",
+      "snippet": "투자 시 유의점은 네 가지다. 첫째, '고객·사이클 민감도'다. 반도체 소재 비중이 높아 팹 가동률·투자 사이클의 스윙이 실적·밸류에이션에 직격탄이 될 ...",
+      "source": "web"
+    },
+    {
+      "title": "한솔케미칼, 여전한 저평가…\"35만원 간다\"[애널리스트의 시각] - Daum",
+      "url": "https://v.daum.net/v/9nUTxSpXyO",
+      "date": "2026-03-26",
+      "last_updated": "2026-04-19",
+      "snippet": "iM증권은 26일 한솔케미칼에 대해 여전히 저평가 국면에 있다며 투자의견을 '매수'로 유지하고, 목표주가는 35만원으로 올려 잡았다. 정원석 iM증권 ...",
+      "source": "web"
+    },
+    {
+      "title": "한솔케미칼 주가 전망: -14% 폭락에도 목표주가 상향된 이유, 지금이 ...",
+      "url": "https://citrusshell.tistory.com/entry/%ED%95%9C%EC%86%94%EC%BC%80%EB%AF%B8%EC%B9%BC-%EC%A3%BC%EA%B0%80-%EC%A0%84%EB%A7%9D-14-%ED%8F%AD%EB%9D%BD%EC%97%90%EB%8F%84-%EB%AA%A9%ED%91%9C%EC%A3%BC%EA%B0%80-%EC%83%81%ED%96%A5%EB%90%9C-%EC%9D%B4%EC%9C%A0-%EC%A7%80%EA%B8%88%EC%9D%B4-%EB%A7%A4%EC%88%98-%EC%A0%81%EA%B8%B0%EC%9D%BC%EA%B9%8C",
+      "date": "2026-04-06",
+      "last_updated": "2026-04-13",
+      "snippet": "... 한솔케미칼의 3대 성장 엔진과 핵심 리스크를 정밀 분석해 보겠습니다.1. 숲을 먼저 보자: 반도체 시장의 뜨거운 열풍나무(종목)를 보기 전에 숲(산업) ...",
+      "source": "web"
+    },
+    {
+      "title": "한솔케미칼 투자분석 2026. 03. 31 - 주달",
+      "url": "https://www.judal.co.kr/?view=stockAI&shareToken=Ud0172v0wIdPlqch",
+      "date": "2026-03-31",
+      "last_updated": "2026-04-16",
+      "snippet": "손절: 240,000원 (120일 이동평균선 이탈 시 리스크 관리); 기대수익: 약 14.28%. 1년 스윙 및 3년 이상의 장기 투자 관점: 한솔케미칼은 2025년과 2026 ...",
+      "source": "web"
+    },
+    {
+      "title": "한솔케미칼 분석리포트 2025 ver. - 실전형 기업분석ㅣ 캐치",
+      "url": "https://www.catch.co.kr/Comp/AnalysisCompView?ID=4036",
+      "date": "2025-07-15",
+      "last_updated": "2025-08-08",
+      "snippet": "한솔케미칼 분석리포트에서 사업현황과 산업동향, 합격 전략까지 한눈에 확인하세요. | 한솔케미칼은 1980년 설립된 한솔그룹 소속의 정밀화학 전문 ...",
+      "source": "web"
+    },
+    {
+      "title": "한솔케미칼, 석화 업황 악화에도 걱정 NO - 마켓인",
+      "url": "https://marketin.edaily.co.kr/News/Read?newsId=04933126645318048",
+      "date": "2026-01-15",
+      "last_updated": "2026-03-15",
+      "snippet": "기업의 단기 현금 동원력을 나타내는 유동비율도 167.7%로 안정정권인 150%를 상회했다. 한솔케미칼이 석유화학 불황에도 불구하고 안정적인 재무구조를 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\n한솔케미칼은 반도체 소재(과산화수소, 전구체) 중심 실적 개선과 밸류업 정책(자사주 매입·배당 강화)으로 호재 비중이 크다[1][2].  \n악재는 고객 사이클 민감도, 천연가스 가격 변동성, 지배구조 이슈로 제한적이며, 법적·거버넌스 리스크는 확인되지 않았다[1][2][3].  \n6개월 추적 결과, 성장 모멘텀 지속 전망이나 업황 스윙에 주의 필요[1][2].\n\n### Critical Risk (거버넌스/법적 리스크)\n**해당 기간 내 특이사항 없음**  \n- 금융당국(금감원 등)/수사기관(검찰·경찰·공정위·국세청) 조사, 압수수색·소환조사·구속영장·고발·과징금, 횡령·배임·사기·자본시장법·분식회계·중대재해 관련 뉴스 없음.  \n- 오너/경영진(한솔그룹 계열) 리스크·의혹·논란 미발견.  \n- 과거 지배구조 안정화 과정에서 DI동일 지분 맞교환 검토 무산(2024년) 있었으나, 현재 진행 중 소송·분쟁 없음[1].\n\n### Business & Financials (영업/재무)\n- **실적 추이**: 2025년 3분기 누적 연결 매출 6,615억 원(+12.6% YoY), 영업이익 1,394억 원(+31.1% YoY), 영업이익률 21.1%로 개선. AI 데이터센터 투자 확대·메모리 팹 가동률 상승·고순도 과산화수소·하이-k 전구체 수요 증가가 주요 요인[1]. 올해 전체 매출 1조 원(+15% YoY), 영업이익 1,990억 원(+28% YoY) 전망[2].  \n- **경영 전략·신사업**: 과산화수소 매출 +12% YoY(SK하이닉스·삼성전자 공급 본격화), 프리커서·이차전지 소재 포트폴리오 다각화로 성장성·변동성 완화[2]. 2025년 4월 밸류업 계획 발표(배당·자사주 상시화), 5월 320억 원 자사주 매입(25만 주) 집행[1].  \n- **특이사항**: 유동비율 167.7%(안정), 석화 업황 악화에도 재무 건전[6]. 리스크 요인으로는 천연가스 가격 변동(미국-이란 전쟁 영향 가능), 팹 가동률 스윙, 신제품 양산 지연, 외국인 수급 불안 지적[1][2][3].\n\n### Conclusion\n**투자 주의 등급: 낮음 (매수 추천 수준)**  \n반도체 업황 호조·포트폴리오 다변화로 실적 안정적이며 법적 리스크 부재, 목표주가 30~35만 원 상향 전망이나 사이클 민감도 모니터링 권고[1][2]."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

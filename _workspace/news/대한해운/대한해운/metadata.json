@@ -1,0 +1,22 @@
+{
+  "corp_name": "대한해운",
+  "api": "sonar",
+  "model": "sonar-pro",
+  "temperature": 0.1,
+  "max_tokens": 4000,
+  "endpoint": "https://api.perplexity.ai/chat/completions",
+  "generated_utc": "2026-04-25T04:07:48.005285+00:00",
+  "usage": {
+    "prompt_tokens": 504,
+    "completion_tokens": 568,
+    "total_tokens": 1072,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00151,
+      "output_tokens_cost": 0.00852,
+      "request_cost": 0.006,
+      "total_cost": 0.01603
+    }
+  },
+  "n_citations": 5
+}

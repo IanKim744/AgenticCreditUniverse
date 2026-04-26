@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-04-25T13:01:28.114607",
+  "companies": {
+    "에스케이씨": {
+      "corp_code": "00139889",
+      "stock_code": "011790",
+      "official_name": "SKC",
+      "aliases": [
+        "에스케이씨",
+        "SKC"
+      ],
+      "industry": "",
+      "group": "SK",
+      "notes": "한글 사명 동명이인 비상장사 회피, stock_code 보유 상장사 채택",
+      "cmp_cd": "1783748"
+    },
+    "대한해운": {
+      "corp_code": "00113535",
+      "stock_code": "005880",
+      "official_name": "대한해운",
+      "aliases": [
+        "대한해운"
+      ],
+      "industry": "",
+      "group": "",
+      "notes": "동명이인 2건 중 상장사 채택",
+      "cmp_cd": "1766746"
+    },
+    "한솔테크닉스": {
+      "corp_code": "00157399",
+      "stock_code": "004710",
+      "official_name": "한솔테크닉스",
+      "aliases": [
+        "한솔테크닉스"
+      ],
+      "industry": "",
+      "group": "한솔",
+      "notes": "",
+      "cmp_cd": "1855106"
+    }
+  }
+}

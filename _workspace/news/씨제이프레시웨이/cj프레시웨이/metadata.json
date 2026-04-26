@@ -1,0 +1,22 @@
+{
+  "corp_name": "CJ프레시웨이",
+  "api": "sonar",
+  "model": "sonar-pro",
+  "temperature": 0.1,
+  "max_tokens": 4000,
+  "endpoint": "https://api.perplexity.ai/chat/completions",
+  "generated_utc": "2026-04-26T07:32:15.976255+00:00",
+  "usage": {
+    "prompt_tokens": 507,
+    "completion_tokens": 713,
+    "total_tokens": 1220,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.01069,
+      "request_cost": 0.006,
+      "total_cost": 0.01822
+    }
+  },
+  "n_citations": 9
+}

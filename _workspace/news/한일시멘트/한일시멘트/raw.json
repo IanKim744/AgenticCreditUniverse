@@ -1,0 +1,96 @@
+{
+  "id": "51dea124-c926-4813-b339-7069394af0c4",
+  "model": "sonar-pro",
+  "created": 1777189489,
+  "usage": {
+    "prompt_tokens": 506,
+    "completion_tokens": 636,
+    "total_tokens": 1142,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.00954,
+      "request_cost": 0.006,
+      "total_cost": 0.01706
+    }
+  },
+  "citations": [
+    "https://www.geconomy.co.kr/mobile/article.html?no=308072",
+    "https://blog.naver.com/jjinvest/223713840777",
+    "https://www.youtube.com/watch?v=z2NBLKXtqM4",
+    "https://www.judal.co.kr/?view=stockAI&shareToken=xaKQY9ysfCGkXFFx",
+    "https://www.catch.co.kr/Comp/AnalysisCompView?ID=3702",
+    "https://deepsearch.com/analytics/company-analysis/KRX:300720/credit?c-name=%25ED%2595%259C%25EC%259D%25BC%25EC%258B%259C%25EB%25A9%2598%25ED%258A%25B8&c-symbol=KRX%253A300720",
+    "https://blog.naver.com/jjandol_/223902878300"
+  ],
+  "search_results": [
+    {
+      "title": "한일시멘트, 단기 유동성 '경고등'…단기차입 1500억 돌파 - 지이코노미",
+      "url": "https://www.geconomy.co.kr/mobile/article.html?no=308072",
+      "date": "2025-10-09",
+      "last_updated": "2025-11-18",
+      "snippet": "설비투자·차입 구조 변화 겹쳐 재무부담 확대 현금흐름 절반 '뚝'…단기채무 상환 여력 악화. IB “단기 레버리지 고착 땐 신용도 부담”.",
+      "source": "web"
+    },
+    {
+      "title": "74. 건설업이 안좋으면 시멘트업도?",
+      "url": "https://blog.naver.com/jjinvest/223713840777",
+      "date": "2025-01-03",
+      "last_updated": "2025-11-30",
+      "snippet": "한일시멘트 차트 분석. 10년 차트. 우상향은 아니다. 5천원~2.5만원 사이 ... 한일시멘트 핵심사항 / 리스크 / MR 투자등급. 핵심사항. ​. 건설업 ...",
+      "source": "web"
+    },
+    {
+      "title": "건설 경기 부진 속 배당주의 매력, 한일시멘트 분석 | 주식인사이트",
+      "url": "https://www.youtube.com/watch?v=z2NBLKXtqM4",
+      "date": "2026-03-26",
+      "last_updated": "2026-04-25",
+      "snippet": "시멘트 업계의 구조적 부진이 지속되는 가운데, 한일시멘트는 어떻게 포지셔닝하고 있을까요? 실적 악화 속에서도 배당을 유지하는 기업의 전략과 ...",
+      "source": "web"
+    },
+    {
+      "title": "한일시멘트 투자분석 2026. 04. 25 - 주달",
+      "url": "https://www.judal.co.kr/?view=stockAI&shareToken=xaKQY9ysfCGkXFFx",
+      "date": "2026-04-25",
+      "snippet": "만약 15,800원 아래로 하락할 경우 손절매를 통해 리스크를 관리하는 것이 현명합니다. 매수: 16,500원 (단기 조정 시 매수 고려). 매도: 18,500원 (단기 ...",
+      "source": "web"
+    },
+    {
+      "title": "한일시멘트 분석리포트 2025 ver. - 실전형 기업분석ㅣ 캐치",
+      "url": "https://www.catch.co.kr/Comp/AnalysisCompView?ID=3702",
+      "date": "2025-06-18",
+      "last_updated": "2025-08-06",
+      "snippet": "한일시멘트 분석리포트에서 사업현황과 산업동향, 합격 전략까지 한눈에 확인하세요. | 한일시멘트는 2018년 인적분할로 설립된 시멘트 및 건설자재 ...",
+      "source": "web"
+    },
+    {
+      "title": "한일시멘트(KRX:300720) | 기업정보, 재무제표, 최신 뉴스 분석 | 딥서치",
+      "url": "https://deepsearch.com/analytics/company-analysis/KRX:300720/credit?c-name=%25ED%2595%259C%25EC%259D%25BC%25EC%258B%259C%25EB%25A9%2598%25ED%258A%25B8&c-symbol=KRX%253A300720",
+      "snippet": "신용 리스크 분석. 기업평가등급. -. -. 현금흐름등급. -. -. 기업어음 등급. -. -. 회사채 신용등급. -. -. 종업원 수 증감률. -. -. 리스크 관련 공시.",
+      "source": "web"
+    },
+    {
+      "title": "한일시멘트 분석 : 네이버 블로그",
+      "url": "https://blog.naver.com/jjandol_/223902878300",
+      "date": "2025-06-18",
+      "last_updated": "2026-02-04",
+      "snippet": "시멘트 외에도 자체 건설사업(한일개발)을 통해 부가가치 창출. ​. 리스크 요인. 건설경기 침체: 부동산 거래 감소, 미분양 증가 등으로 전방 산업 부진 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\n한일시멘트는 안정적 실적과 배당 유지에도 불구하고 단기 유동성 악화와 건설 경기 부진이 주요 악재로 작용 중.  \n대규모 설비투자 부담으로 단기차입금이 급증하며 재무 리스크 부각, 현금흐름 반토막.  \n**법적/거버넌스 리스크는 확인되지 않음** – 호재(실적) 대비 악재(유동성) 비중 3:7.\n\n### Critical Risk (거버넌스/법적 리스크)\n**해당 기간 내 특이사항 없음.**  \n검찰/경찰/금감원/공정위/국세청 조사, 압수수색/소환조사/구속영장/고발/과징금, 횡령/배임/사기/자본시장법/분식회계/중대재해 관련 사건 추적 결과 없음. 오너/경영진 이름 기반 리스크 의혹도 미발견[1][2][3][5][6][7].\n\n### Business & Financials (영업/재무)\n- **실적 추이**: 2024년 매출 1조7995억원, 순이익 1777억원 기록 후 2025년 상반기 매출 9097억원, 순이익 1290억원으로 양호 유지. 그러나 2025년 3분기 누적 매출 18.1%↓, 영업이익 51.2%↓, 순이익 62.1%↓로 건설 경기 침체·시멘트 수요 감소 영향[1][3][5].  \n- **재무 특이사항**: 단기차입금 1510억원(전년比 2배↑, 전체 차입 7419억원 중 67%), 현금흐름 2023년 2462억원→2024년 1316억원(반토막)→2025H1 545억원 지속 하락. 현금커버리지 비율 2025H1 42%로 악화, 대규모 투자(온실가스 감축 5179억원, 에코발전 등)로 유동성 압박[1].  \n- **사업 리스크**: 건설업 부진(부동산 감소·중국산 경쟁), 환경 규제 강화로 설비투자 부담↑, 과경쟁 구조 지속[2][3][7].\n\n### Conclusion\n**투자 주의 등급: 높음 (High Caution)** – 실적 안정에도 유동성 리스크와 산업 부진으로 단기 레버리지 고착 시 신용도 하락 우려, 건설 경기 회복 전 매수 제한 권고[1][3]."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

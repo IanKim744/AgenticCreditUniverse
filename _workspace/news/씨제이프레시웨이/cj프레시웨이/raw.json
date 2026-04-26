@@ -1,0 +1,114 @@
+{
+  "id": "4c418a62-5493-4c0c-be8c-3c7c08482d65",
+  "model": "sonar-pro",
+  "created": 1777188743,
+  "usage": {
+    "prompt_tokens": 507,
+    "completion_tokens": 713,
+    "total_tokens": 1220,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.01069,
+      "request_cost": 0.006,
+      "total_cost": 0.01822
+    }
+  },
+  "citations": [
+    "https://eiec.kdi.re.kr/policy/callDownload.do?num=255762&filenum=1&dtime=20251110000642",
+    "https://m.cjfreshway.com/sustainability/business-ethics/risk-management.jsp",
+    "https://m.cjfreshway.com/_resource/pdf/20251022/2024_ESG_Report_CJFW_KR_.pdf",
+    "https://stock.pstatic.net/stock-research/company/74/20241216_company_60502000.pdf",
+    "https://els.daejin.ac.kr/bbs/daejin/194/455156/artclView.do",
+    "https://m.cjfreshway.com/career/job/introduce.do",
+    "https://linkareer.com/cover-letter/36256?page=1&sort=RELEVANCE&tab=all",
+    "https://m.cjfreshway.com/_resource/pdf/20250630/2024_ESG_Report_CJFW_KR.pdf",
+    "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250320000898&docno=&viewerhost="
+  ],
+  "search_results": [
+    {
+      "title": "[PDF] 기업집단 「CJ」 소속 CJ프레시웨이  의 대규모 부당 인력지원행위 제재",
+      "url": "https://eiec.kdi.re.kr/policy/callDownload.do?num=255762&filenum=1&dtime=20251110000642",
+      "date": "2024-08-13",
+      "last_updated": "2025-11-10",
+      "snippet": "ㅇ (내부인식) 프레시웨이는 지역주주들의 존재 자체를 프레시원 사업의 주요. 리스크로 분석하였으며, 모든 지역주주들을 이들의 경제적 성과와 무관하게.",
+      "source": "web"
+    },
+    {
+      "title": "리스크 관리 | 지배구조 - CJ프레시웨이",
+      "url": "https://m.cjfreshway.com/sustainability/business-ethics/risk-management.jsp",
+      "date": "2024-01-01",
+      "last_updated": "2025-10-29",
+      "snippet": "통합 리스크 관리 체계. CJ프레시웨이는 각종 사업 활동에서 발생할 수 있는 리스크를 체계적으로 관리하기 위해 '리스크 위원회'를 운영합니다.",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] We Make a Fresh Way for Tomorrow - CJ프레시웨이",
+      "url": "https://m.cjfreshway.com/_resource/pdf/20251022/2024_ESG_Report_CJFW_KR_.pdf",
+      "date": "2025-10-22",
+      "last_updated": "2026-04-16",
+      "snippet": "대응하기 위해 전환 리스크 분석을 실시하였습니다. IEA1)에서 제시한 감축 시나리오를 기반으로 분석한 결과, 시나리오별. 정책·기술 전환 속도에 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] CJ프레시웨이(051500)",
+      "url": "https://stock.pstatic.net/stock-research/company/74/20241216_company_60502000.pdf",
+      "date": "2024-12-16",
+      "snippet": "리스크 요인은 외식식자재 유통. 매출액의 감소 지속 개연성. CJ프레시웨이의 리스크 요인은 외식식자재 유통 매출액의 감소가 지속될 개연성이다. 한은 ...",
+      "source": "web"
+    },
+    {
+      "title": "[채용안내] [CJ프레시웨이] 2025년 하반기 신입사원 모집",
+      "url": "https://els.daejin.ac.kr/bbs/daejin/194/455156/artclView.do",
+      "date": "2025-09-12",
+      "last_updated": "2025-09-16",
+      "snippet": "[CJ프레시웨이] 2025년 하반기 신입사원 모집. □ 모집부문 : 영업, FS수주영업, MD, 글로벌MD, 식품R&D, 데이터분석, 정보보안, 물류기.",
+      "source": "web"
+    },
+    {
+      "title": "직무소개 | 채용 - CJ프레시웨이",
+      "url": "https://m.cjfreshway.com/career/job/introduce.do",
+      "last_updated": "2026-04-15",
+      "snippet": "내외부 데이터 분석을 통해 비즈니스 인사이트를 도출하고, 데이터 기반의 사업 전략 수립과 비즈니스 의사 결정을 지원합니다. 상품, 영업, 마케팅, 물류 등 밸류체인 ...",
+      "source": "web"
+    },
+    {
+      "title": "합격 자소서 - CJ프레시웨이 / 리스크관리 / 2025 하반기 - 링커리어",
+      "url": "https://linkareer.com/cover-letter/36256?page=1&sort=RELEVANCE&tab=all",
+      "date": "2026-03-09",
+      "last_updated": "2026-04-26",
+      "snippet": "이 글은 CJ프레시웨이 리스크관리 지원자가 실제 마케팅 프로젝트와 제휴 경험을 바탕으로 작성한 자기소개서 사례입니다. 지역 소상공인 매장의 경쟁 메뉴·방문 ...",
+      "source": "web"
+    },
+    {
+      "title": "We Make a Fresh Way for Tomorrow - CJ프레시웨이",
+      "url": "https://m.cjfreshway.com/_resource/pdf/20250630/2024_ESG_Report_CJFW_KR.pdf",
+      "last_updated": "2026-04-20",
+      "snippet": "본 보고서는 CJ프레시웨이가 발간하는 네 번째 ESG 보고서로, 당사의 지속가능경영 활동과 성과를 이해관계자에게 투명하게. 전달하고자 매년 보고서를 발간하고 ...",
+      "source": "web"
+    },
+    {
+      "title": "[CJ프레시웨이] 사업보고서(일반법인)",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20250320000898&docno=&viewerhost=",
+      "date": "2025-03-20",
+      "last_updated": "2026-03-30",
+      "snippet": "회사는 환율 변동에 따른 환차손 리스크를 헷지하기 위해 통화 선도 거래를 체결하고있습니다. ... 분석까지 모든 식품의 안전수준을 과학적으로 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\nCJ프레시웨이는 안정적인 ESG 경영과 리스크 관리 체계를 구축 중이나, 공정거래위원회로부터 대규모 부당 인력지원행위 제재를 받은 바 있어 거버넌스 리스크가 주요 악재.[1]  \n영업 리스크로 외식식자재 유통 매출 감소가 지속될 가능성이 지적되며, 재무적으로 환율 변동 헷지 대응 중.[4][9]  \n호재(리스크 관리 강화, 채용 확대) 대비 악재 비중이 60:40으로, 법적 제재 잔여 영향 모니터링 필요.\n\n### Critical Risk (거버넌스/법적 리스크)\n- **금융당국/수사기관 조사 현황**: 공정거래위원회(Cartel Commission)로부터 'CJ그룹 소속 CJ프레시웨이 대규모 부당 인력지원행위' 제재. 프레시원 사업에서 지역주주를 리스크로 인식하고 CJ그룹 차원에서 체계적 퇴출(지분 100% 취득) 작업 수행, 중소상공인을 장애물로 간주한 행위로 제재.[1] 진행 단계는 제재 완료(2025년 11월 기준 문서화), 예상 파급력은 그룹 이미지 손상 및 추가 공정위 조사 유발 가능성 높음. 검찰/경찰/금감원/국세청 관련 최근 6개월 내 추가 수사 흔적 없음.\n- **주요 소송 및 분쟁**: 해당 기간 내 특이사항 없음. 오너/경영진(이재현 등) 관련 횡령/배임/사기/자본시장법/분식회계/중대재해 의혹 미발견.\n- *특이사항*: 내부적으로 지역주주를 '정리 대상'으로 분류하고 영업 실적 무관 퇴출 추진, CJ그룹 적극 개입 확인.[1]\n\n### Business & Financials (영업/재무)\n- **실적 추이 및 특이사항**: 외식식자재 유통 매출 감소 지속 개연성이 주요 리스크 요인으로 분석, 한국은행 관련 보고서에서 지적.[4] 환율 변동 리스크에 통화 선도 거래 헷지 대응 중이며, 식품 안전 수준 과학적 분석 강화.[9] ESG 보고서상 식품안전·윤리·준법경영·안전·보건이 중대 이슈로 2~4년 연속 선정, 전환 리스크(정책·기술) 분석 실시.[3] 리스크 위원회 및 BRM팀 운영으로 사전·사후 관리 체계화, 2025 하반기 리스크 관리 등 채용 확대.[2][5]\n\n### Conclusion\n**투자 주의 등급: 중간(황색)**. 공정위 제재 잔여 영향과 외식 매출 하방 리스크로 단기 불확실성 존재하나, 내부 리스크 관리 강화로 장기 안정 가능. 6개월 내 추가 공정 관련 조사 추적 권고."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

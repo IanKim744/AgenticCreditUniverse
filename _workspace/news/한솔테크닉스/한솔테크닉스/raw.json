@@ -1,0 +1,95 @@
+{
+  "id": "2c832b74-5331-44be-8465-bd62fe3d0921",
+  "model": "sonar-pro",
+  "created": 1777090079,
+  "usage": {
+    "prompt_tokens": 507,
+    "completion_tokens": 531,
+    "total_tokens": 1038,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.00796,
+      "request_cost": 0.006,
+      "total_cost": 0.01549
+    }
+  },
+  "citations": [
+    "https://hansol.com/ir/technics/grow_doc07.pdf",
+    "https://www.hansoltechnics.com",
+    "https://www.hansoltechnics.com/htmls/download/2023_HansolGroup_SR_Kor.pdf",
+    "https://w4.kirs.or.kr/download/research/250812_%ED%95%9C%EC%86%94%EC%95%84%EC%9D%B4%EC%9B%90%EC%8A%A4_%EC%B5%9C%EC%A2%85.pdf",
+    "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260324000142&docno=&viewerhost=",
+    "https://myess.hansoltechnics.com/pvList/pvList.do",
+    "https://www.valueline.co.kr/finance/mri/004710"
+  ],
+  "search_results": [
+    {
+      "title": "[PDF] 한솔테크닉스 행동규범",
+      "url": "https://hansol.com/ir/technics/grow_doc07.pdf",
+      "last_updated": "2025-09-10",
+      "snippet": "한솔테크닉스는 근로자에게 모든 확인된 작업장 위험 (기계, 전기, 화학물질,. 화재 및 신체적 위험 등)에 대해 근로자의 모국어 또는 근로자가 이해할. 수 있는 언어로 ...",
+      "source": "web"
+    },
+    {
+      "title": "한솔테크닉스",
+      "url": "https://www.hansoltechnics.com",
+      "snippet": "고객 중심의 신뢰와 가치를 제공합니다. 링크 이동하기. 반도체 부품. 반도체 초정밀 특수 부품 분야에서 최고의 기술과 품질경쟁력으로 고객과 함께 성장합니다 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] 2023 HANSOL GROUP SUSTAINABILITY REPORT - 한솔테크닉스",
+      "url": "https://www.hansoltechnics.com/htmls/download/2023_HansolGroup_SR_Kor.pdf",
+      "date": "2023-06-30",
+      "last_updated": "2025-10-07",
+      "snippet": "한솔그룹은 주요 리스크에 효과적으로 대응할 수 있도록 각 리스크 발생 ... - 온실가스검증심사원에 의한 환경정보공시 데이터와 일치 여부 확인.",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] 한솔아이원스(114810) - 한국IR협의회",
+      "url": "https://w4.kirs.or.kr/download/research/250812_%ED%95%9C%EC%86%94%EC%95%84%EC%9D%B4%EC%9B%90%EC%8A%A4_%EC%B5%9C%EC%A2%85.pdf",
+      "date": "2025-08-12",
+      "snippet": "한솔아이원스의 최대주주는 한솔테크닉스㈜로, 2025년 1분기말 기준 지분 35.32%를 보유하고 있다. 한솔테크닉스. 주식회사는 1966년 설립된 한솔그룹 ...",
+      "source": "web"
+    },
+    {
+      "title": "[한솔테크닉스] 투자설명서 - 상장공시시스템(KIND)",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260324000142&docno=&viewerhost=",
+      "date": "2026-03-24",
+      "last_updated": "2026-04-08",
+      "snippet": "이 투자설명서에 대한 증권신고의 효력발생은 정부가 증권신고서의 기재사항이 진실 또는 정확하다는 것을 인정하거나 이 증권의 가치를 보증 또는 승인한 ...",
+      "source": "web"
+    },
+    {
+      "title": "PV Calculator - Hansol Technics",
+      "url": "https://myess.hansoltechnics.com/pvList/pvList.do",
+      "date": "2020-01-16",
+      "last_updated": "2025-06-29",
+      "snippet": "After checking the information below, select the OK button. 비밀번호찾기 테이블. ID. Email. Your password was sent to the registered email address. Go to Main.",
+      "source": "web"
+    },
+    {
+      "title": "한솔테크닉스(004710) - 종목진단 - 밸류라인",
+      "url": "https://www.valueline.co.kr/finance/mri/004710",
+      "date": "2020-01-01",
+      "last_updated": "2025-06-03",
+      "snippet": "자체 개발한 AI 종목진단 분석 시스템으로 기업의 수급분석, 밸류에이션, 투자매력을 종합적으로 진단합니다. 밸류에이션 밴드차트는 주가가 저평가~고평가의 상태를 나태 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\n한솔테크닉스는 반도체 초정밀 부품 사업 중심으로 안정적 운영 중이며, 한솔그룹 내 준법경영 및 리스크 관리 체계가 강조됨[1][2][3].  \n법적·수사 리스크 관련 최근 6개월 내 특이사항 없음으로 거버넌스 안정성 높음.  \n호재(사업 성장·리스크 관리) 비중이 악재(없음)를 압도하나, 재무 실적 상세 미확인으로 보수적 접근 필요.\n\n### Critical Risk (거버넌스/법적 리스크)\n- **금융당국/수사기관 조사 현황**: 해당 기간 내 검찰, 경찰, 금감원, 공정위, 국세청 관련 조사(압수수색, 소환조사, 구속영장, 고발, 과징금, 횡령, 배임, 사기, 자본시장법, 분식회계, 중대재해) 사례 없음. 오너/경영진 이름 기반 리스크 의혹·논란 미발견[1][3].\n- **주요 소송 및 분쟁**: 소송 가액·분쟁 관련 정보 없음.\n- *해당 기간 내 특이사항 없음*.\n\n### Business & Financials (영업/재무)\n- **실적 추이 및 특이사항**: 반도체 초정밀 특수 부품 분야에서 기술·품질 경쟁력 강조, 고객 중심 성장 전략 추진 중[2]. 한솔그룹 지속가능성 보고서상 환경·안전·윤리 리스크 관리 프로세스 운영, 준법경영 취약점 개선 실행(한솔제지 등 그룹사 포함)[3]. 한솔아이원스 최대주주(35.32%, 2025.1Q 기준)로 그룹 연계 안정[4]. 투자설명서 공시 진행 중이나 구체 실적 변동 요인 미상세[5]. AI 기반 종목진단 시스템에서 밸류에이션 분석 가능하나 수치적 실적 추이 데이터 부족[7].\n\n### Conclusion\n**투자 주의 등급: 낮음 (Low Risk)**. 법적·재무 리스크 부재와 리스크 관리 체계로 안정적이나, 반도체 사업 변동성 고려 시 실적 상세 모니터링 권고."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "295a3851-9fd5-4d37-bc0e-8b8483316019",
+  "model": "sonar-pro",
+  "created": 1777189164,
+  "usage": {
+    "prompt_tokens": 503,
+    "completion_tokens": 709,
+    "total_tokens": 1212,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00151,
+      "output_tokens_cost": 0.01064,
+      "request_cost": 0.006,
+      "total_cost": 0.01814
+    }
+  },
+  "citations": [
+    "https://blog.naver.com/s-valueup/224242382786",
+    "https://www.youtube.com/watch?v=Rs27mV3_Y74",
+    "https://changeui.co.kr/sub/insight/news.php?mode=view&bid=6&idx=578",
+    "https://www.infostockdaily.co.kr/news/articleView.html?idxno=213989",
+    "https://contents.premium.naver.com/study21/finance21/contents?tag=SK%EC%98%A8",
+    "https://www.eugenefn.com/common/files/amail/20251103_096770_tjdgus2009_864.pdf",
+    "https://marketin.edaily.co.kr/News/Read?newsId=03466966642367360",
+    "https://v.daum.net/v/Zen36aVZA4",
+    "http://www.sk-on.com/together/focus.asp"
+  ],
+  "search_results": [
+    {
+      "title": "SK이노, SK온 리스크 5814억 손실, 6년 연속 적자가 남긴 구조적 질문",
+      "url": "https://blog.naver.com/s-valueup/224242382786",
+      "date": "2026-04-06",
+      "last_updated": "2026-04-08",
+      "snippet": "SK온의 2025년 연간 영업손실은 9319억 원으로 집계됐어요. 분기별로 보면 1분기 2993억 원, 2분기 664억 원, 3분기 1248억 원, 4분기 4414억 원의 손실을 ...",
+      "source": "web"
+    },
+    {
+      "title": "SK Innovation's dividend payment is nullified due to SK On's risk ...",
+      "url": "https://www.youtube.com/watch?v=Rs27mV3_Y74",
+      "date": "2026-02-05",
+      "last_updated": "2026-02-12",
+      "snippet": "SK이노베이션 #SK온 #SK이노베이션배당 SK이노베이션(096770)의 배당이 다시 멈췄다 ... 분석이 나온다. [취재] 박상인 기자 bright@infostock.co ...",
+      "source": "web"
+    },
+    {
+      "title": "SK이노베이션, SK온 리스크와 5,814억 손실이 남긴 구조적 질문",
+      "url": "https://changeui.co.kr/sub/insight/news.php?mode=view&bid=6&idx=578",
+      "date": "2026-04-06",
+      "snippet": "SK온은 2021년 분사 이후 단 한 번도 연간 흑자를 달성하지 못하며 6년 연속 적자 행진이 이어질 것으로 전망되고 있습니다. 2025년 SK온의 연간 영업 ...",
+      "source": "web"
+    },
+    {
+      "title": "[기업진단] SK온 리스크에 '배당 無' SK이노베이션…밸류업 정책 ...",
+      "url": "https://www.infostockdaily.co.kr/news/articleView.html?idxno=213989",
+      "date": "2026-02-06",
+      "snippet": "시장에서는 무배당의 직접적인 원인으로 SK온을 지목한다. SK온은 2021년 분사 이후 한 번도 연간 흑자를 내지 못했다. 2025년에도 연간 영업손실 9319억 ...",
+      "source": "web"
+    },
+    {
+      "title": "SK온 : 재무 리스크 스캔 리포트 - 네이버 프리미엄콘텐츠 - NAVER",
+      "url": "https://contents.premium.naver.com/study21/finance21/contents?tag=SK%EC%98%A8",
+      "date": "2026-03-21",
+      "last_updated": "2026-04-10",
+      "snippet": "재무 리스크 스캔 리포트 · 검색 · 로그인. #SK온. 최신순 · 과거순 · [재무분석: 에코프로비엠] 2025년 기말: 영업이익 1433억 흑자전환, 유동차입 1조 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] SK 이노베이션 - 유진투자증권",
+      "url": "https://www.eugenefn.com/common/files/amail/20251103_096770_tjdgus2009_864.pdf",
+      "date": "2025-11-03",
+      "last_updated": "2026-04-15",
+      "snippet": "투자포인트는 1) SK온, 엔무브 합병으로 인한 IPO 리스크 소멸, 2) 美. ESS 신규 수주 1GWh 및 6.2GWh 우선사업권 확보, 3) 중국 설비 폐쇄로 인한 ...",
+      "source": "web"
+    },
+    {
+      "title": "신용 리스크 여전한 SK온, 시장 평가는 회복 - 마켓인",
+      "url": "https://marketin.edaily.co.kr/News/Read?newsId=03466966642367360",
+      "date": "2025-11-19",
+      "last_updated": "2026-04-23",
+      "snippet": "채권시장 전문가 상당수가 SK온의 현재 신용등급이 과도하게 높다고 평가하며 신용 리스크에 대한 경계심을 드러냈다. 특히 공모채 발행에 약 2년여간 ...",
+      "source": "web"
+    },
+    {
+      "title": "[35th SRE][Worst]시장 우려 여전한 SK온, 신용리스크 심화 - Daum",
+      "url": "https://v.daum.net/v/Zen36aVZA4",
+      "date": "2024-11-20",
+      "snippet": "SK온을 위해 그룹 재정이 계속 투입되고, 알짜 계열사들까지 잇따라 합병되고 있음에도 대내외적 여건이 점차 악화되고 있어 시장의 우려를 불식시키지 ...",
+      "source": "web"
+    },
+    {
+      "title": "Focus Issue < ESG 경영 < 지속가능경영 < SK온",
+      "url": "http://www.sk-on.com/together/focus.asp",
+      "date": "2021-01-01",
+      "last_updated": "2025-09-20",
+      "snippet": "SK이노베이션은 다면분석을 통해 도출된 이슈풀 중 이해관계자 관심도(Impact)와 비즈니스 영향도(Relevance)를 고려하여 3개의 중요 이슈를 선정합니다. SK이노베이션 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\nSK온은 2025년 연간 영업손실 9,319억 원으로 6년 연속 적자 지속, SK이노베이션 연결 순손실 5조 4,061억 원 유발하며 배당 중단.[1][2][3][4]  \n악재 비중이 압도적(재무 부진, 자산 손상, 신용 리스크)으로 호재(정유 부문 흑자)는 상쇄됨.[1][2]  \n단기 회복 전망 미미, 2026년에도 1조 6,446억 원 손실 예상.[1]\n\n### Critical Risk (거버넌스/법적 리스크)\n**해당 기간 내 특이사항 없음**  \n검찰/경찰/금감원/공정위/국세청 조사, 압수수색/소환조사/구속영장/고발/과징금, 횡령/배임/사기/자본시장법/분식회계/중대재해 관련 사건 추적 결과 없음. 오너/경영진(최태원 등) 리스크 의혹도 확인되지 않음.\n\n### Business & Financials (영업/재무)\n- **실적 추이**: 2025년 SK온 연간 영업손실 9,319억 원(1Q: -2,993억, 2Q: -664억, 3Q: -1,248억, 4Q: -4,414억 원), 분사(2021년) 후 6년 연속 적자.[1][2][3][4] SK이노베이션 연결 순손실 5조 4,061억 원, 영업외손실 4조 6,573억 원 중 SK온 자산 손상(포드 합작 블루오벌SK 3조 7,000억 원) 주원인.[1]  \n- **변동 요인**: 미국 EV 수요 둔화, IRA 보조금 불확실성, 완성차사 전략 수정.[1] 그룹 자본 조달(부채 12조 원 규모, 유상증자)로 유동성 확보하나 상환 부담·지분 희석 리스크.[1][2]  \n- **특이사항**: 배당 중단(SK이노베이션 2025년 결산 무배당), 신용등급 A+에도 시장 우려(과도 평가, 그룹 재정 투입 지속).[2][7][8] SK온-엔무브 합병으로 IPO 리스크 소멸하나 ESS 수주(美 1+6.2GWh) 등 단기 성과 제한적.[6] 2026년 손실 1조 6,446억 원 예상, 비핵심 자산 매각 추진.[1]\n\n### Conclusion\n**투자 주의 등급: 최고(High Risk)** - 지속 적자·자산 손상으로 재무 건전성 악화, 법적 리스크 부재하나 사업 리스크가 치명적이며 단기 턴어라운드 불투명.[1][2][7][8]"
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

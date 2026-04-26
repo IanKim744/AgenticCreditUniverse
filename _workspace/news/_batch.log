@@ -1,0 +1,117 @@
+[skip-cache] 다우기술: search='다우기술' tokens=1151 cost=$0.0172 cites=9 :: cache fresh at /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/다우기술/다우기술
+
+=== [롯데물산] search='롯데물산' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 롯데물산 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/롯데물산 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 롯데물산: search='롯데물산' tokens=1185 cost=$0.0177 cites=7 :: dt=9.2s
+
+=== [보령(구. 보령제약)] search='보령제약' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 보령제약 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/보령(구. 보령제약) --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 보령(구. 보령제약): search='보령제약' tokens=1025 cost=$0.0153 cites=5 :: dt=5.2s
+
+=== [부산롯데호텔] search='부산롯데호텔' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 부산롯데호텔 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/부산롯데호텔 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 부산롯데호텔: search='부산롯데호텔' tokens=1068 cost=$0.0159 cites=5 :: dt=5.2s
+
+=== [씨제이프레시웨이] search='CJ프레시웨이' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name CJ프레시웨이 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/씨제이프레시웨이 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 씨제이프레시웨이: search='CJ프레시웨이' tokens=1220 cost=$0.0182 cites=9 :: dt=8.1s
+
+=== [알씨아이파이낸셜서비스코리아] search='RCI Financial Services Korea' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name RCI Financial Services Korea --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/알씨아이파이낸셜서비스코리아 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 알씨아이파이낸셜서비스코리아: search='RCI Financial Services Korea' tokens=1160 cost=$0.0173 cites=6 :: dt=6.5s
+
+=== [에스케이디스커버리] search='SK디스커버리' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name SK디스커버리 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/에스케이디스커버리 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 에스케이디스커버리: search='SK디스커버리' tokens=1227 cost=$0.0183 cites=7 :: dt=7.9s
+
+=== [에스케이스페셜티(구. 에스케이머티리얼즈)] search='SK스페셜티' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name SK스페셜티 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/에스케이스페셜티(구. 에스케이머티리얼즈) --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 에스케이스페셜티(구. 에스케이머티리얼즈): search='SK스페셜티' tokens=1064 cost=$0.0159 cites=10 :: dt=6.6s
+
+=== [에스케이실트론] search='SK실트론' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name SK실트론 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/에스케이실트론 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 에스케이실트론: search='SK실트론' tokens=1819 cost=$0.0272 cites=7 :: dt=18.6s
+
+=== [에스케이온] search='SK온' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name SK온 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/에스케이온 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 에스케이온: search='SK온' tokens=1212 cost=$0.0181 cites=9 :: dt=6.5s
+
+=== [에이치라인해운] search='H-Line해운' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name H-Line해운 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/에이치라인해운 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 에이치라인해운: search='H-Line해운' tokens=1161 cost=$0.0174 cites=7 :: dt=6.0s
+
+=== [한솔제지] search='한솔제지' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 한솔제지 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/한솔제지 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 한솔제지: search='한솔제지' tokens=1119 cost=$0.0167 cites=9 :: dt=6.2s
+
+=== [한솔케미칼] search='한솔케미칼' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 한솔케미칼 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/한솔케미칼 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 한솔케미칼: search='한솔케미칼' tokens=1280 cost=$0.0191 cites=6 :: dt=6.8s
+
+=== [한일시멘트] search='한일시멘트' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 한일시멘트 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/한일시멘트 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 한일시멘트: search='한일시멘트' tokens=1142 cost=$0.0171 cites=7 :: dt=5.6s
+
+=== [한화리츠] search='한화리츠' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 한화리츠 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/한화리츠 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 한화리츠: search='한화리츠' tokens=1788 cost=$0.0268 cites=9 :: dt=17.2s
+
+=== [현대로템] search='현대로템' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 현대로템 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/현대로템 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 현대로템: search='현대로템' tokens=1197 cost=$0.0179 cites=9 :: dt=6.3s
+
+=== [현대리바트] search='현대리바트' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 현대리바트 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/현대리바트 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 현대리바트: search='현대리바트' tokens=1233 cost=$0.0184 cites=5 :: dt=6.4s
+
+=== [현대비앤지스틸] search='현대비앤지스틸' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name 현대비앤지스틸 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/현대비앤지스틸 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 현대비앤지스틸: search='현대비앤지스틸' tokens=1267 cost=$0.0189 cites=8 :: dt=7.0s
+
+=== [에스케이네트웍스서비스] search='SK네트웍스서비스' ===
+  CMD: /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/.venv/bin/python /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/AgenticCreditUniverse/pplx_news/pplx_risk_analyst.py --name SK네트웍스서비스 --outdir /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/에스케이네트웍스서비스 --api sonar --model sonar-pro --max-tokens 4000
+  sleeping 75s …
+[ok] 에스케이네트웍스서비스: search='SK네트웍스서비스' tokens=1209 cost=$0.0180 cites=8 :: dt=6.5s
+
+============================================================
+SUMMARY: ok=18 skip=1 fail=0 / 19
+TOTAL COST: $0.3516
+============================================================
+  - 다우기술: skip-cache (search='다우기술', tokens=1151, cost=$0.0172) :: cache fresh at /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/다우기술/다우기술
+  - 롯데물산: ok (search='롯데물산', tokens=1185, cost=$0.0177) :: dt=9.2s
+  - 보령(구. 보령제약): ok (search='보령제약', tokens=1025, cost=$0.0153) :: dt=5.2s
+  - 부산롯데호텔: ok (search='부산롯데호텔', tokens=1068, cost=$0.0159) :: dt=5.2s
+  - 씨제이프레시웨이: ok (search='CJ프레시웨이', tokens=1220, cost=$0.0182) :: dt=8.1s
+  - 알씨아이파이낸셜서비스코리아: ok (search='RCI Financial Services Korea', tokens=1160, cost=$0.0173) :: dt=6.5s
+  - 에스케이디스커버리: ok (search='SK디스커버리', tokens=1227, cost=$0.0183) :: dt=7.9s
+  - 에스케이스페셜티(구. 에스케이머티리얼즈): ok (search='SK스페셜티', tokens=1064, cost=$0.0159) :: dt=6.6s
+  - 에스케이실트론: ok (search='SK실트론', tokens=1819, cost=$0.0272) :: dt=18.6s
+  - 에스케이온: ok (search='SK온', tokens=1212, cost=$0.0181) :: dt=6.5s
+  - 에이치라인해운: ok (search='H-Line해운', tokens=1161, cost=$0.0174) :: dt=6.0s
+  - 한솔제지: ok (search='한솔제지', tokens=1119, cost=$0.0167) :: dt=6.2s
+  - 한솔케미칼: ok (search='한솔케미칼', tokens=1280, cost=$0.0191) :: dt=6.8s
+  - 한일시멘트: ok (search='한일시멘트', tokens=1142, cost=$0.0171) :: dt=5.6s
+  - 한화리츠: ok (search='한화리츠', tokens=1788, cost=$0.0268) :: dt=17.2s
+  - 현대로템: ok (search='현대로템', tokens=1197, cost=$0.0179) :: dt=6.3s
+  - 현대리바트: ok (search='현대리바트', tokens=1233, cost=$0.0184) :: dt=6.4s
+  - 현대비앤지스틸: ok (search='현대비앤지스틸', tokens=1267, cost=$0.0189) :: dt=7.0s
+  - 에스케이네트웍스서비스: ok (search='SK네트웍스서비스', tokens=1209, cost=$0.0180) :: dt=6.5s
+
+summary saved → /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/_batch_summary.json

@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --radius: 0.625rem;
+
+  /* Base (light) */
+  --background: oklch(0.992 0.002 250);
+  --foreground: oklch(0.20 0.02 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.20 0.02 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.20 0.02 260);
+  --primary: oklch(0.50 0.16 260);
+  --primary-foreground: oklch(0.99 0.002 250);
+  --secondary: oklch(0.965 0.008 250);
+  --secondary-foreground: oklch(0.25 0.03 260);
+  --muted: oklch(0.965 0.008 250);
+  --muted-foreground: oklch(0.50 0.02 260);
+  --row-hover: oklch(0.93 0.012 250);
+  --accent: oklch(0.955 0.015 255);
+  --accent-foreground: oklch(0.30 0.10 260);
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.92 0.008 255);
+  --input: oklch(0.92 0.008 255);
+  --ring: oklch(0.50 0.16 260);
+
+  /* Charts */
+  --chart-1: oklch(0.55 0.16 260);
+  --chart-2: oklch(0.65 0.14 180);
+  --chart-3: oklch(0.70 0.16 80);
+  --chart-4: oklch(0.60 0.18 25);
+  --chart-5: oklch(0.55 0.14 310);
+
+  /* Rating semantic — 8-bucket gradient (green 160° → red 25°). lib/credit.ts ratingColorVar() 단일 출처. */
+  --rating-tier-1: oklch(0.55 0.13 160); /* AA- 이상 (AAA, AA+, AA, AA-) */
+  --rating-tier-2: oklch(0.60 0.14 140); /* A+ */
+  --rating-tier-3: oklch(0.65 0.15 115); /* A0 */
+  --rating-tier-4: oklch(0.68 0.16  90); /* A- */
+  --rating-tier-5: oklch(0.70 0.17  70); /* BBB+ */
+  --rating-tier-6: oklch(0.65 0.18  50); /* BBB0 */
+  --rating-tier-7: oklch(0.60 0.19  35); /* BBB- */
+  --rating-tier-8: oklch(0.55 0.20  25); /* BB+ 이하 (BB+, BB, BB-, B+, B, B-, CCC, CC, C, D) */
+
+  /* Legacy aliases — KpiBar 도넛(high/mid/low)과 universe-chip △ 호환용. 새 코드는 --rating-tier-N 사용. */
+  --rating-aaa: var(--rating-tier-1);
+  --rating-aa:  var(--rating-tier-1);
+  --rating-a:   var(--rating-tier-3);
+  --rating-bbb: var(--rating-tier-5);
+  --rating-bb:  var(--rating-tier-8);
+  --rating-b:   var(--rating-tier-8);
+
+  /* Watch / Delta */
+  --watch-positive: oklch(0.55 0.14 160);
+  --watch-stable:   oklch(0.55 0.02 260);
+  --watch-negative: oklch(0.55 0.20 25);
+
+  /* Pipeline / Job state */
+  --state-pending: oklch(0.65 0.02 260);
+  --state-running: oklch(0.55 0.16 260);
+  --state-success: oklch(0.55 0.13 160);
+  --state-failed:  oklch(0.55 0.20 25);
+
+  /* Surfaces & shadows */
+  --surface-subtle: oklch(0.978 0.004 250);
+  --shadow-card: 0 1px 2px 0 oklch(0.20 0.02 260 / 0.04), 0 1px 3px 0 oklch(0.20 0.02 260 / 0.06);
+  --shadow-elevated: 0 4px 12px -2px oklch(0.20 0.02 260 / 0.08), 0 2px 4px -1px oklch(0.20 0.02 260 / 0.04);
+
+  /* Fonts (set by next/font/local in layout) */
+  --font-sans: var(--font-pretendard), -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-row-hover: var(--row-hover);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

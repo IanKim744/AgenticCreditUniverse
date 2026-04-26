@@ -1,0 +1,180 @@
+{
+  "results": [
+    {
+      "folder": "다우기술",
+      "search_key": "다우기술",
+      "status": "skip-cache",
+      "msg": "cache fresh at /Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse/_workspace/news/다우기술/다우기술",
+      "tokens": 1151,
+      "cost": 0.01722,
+      "citations": 9
+    },
+    {
+      "folder": "롯데물산",
+      "search_key": "롯데물산",
+      "status": "ok",
+      "msg": "dt=9.2s",
+      "tokens": 1185,
+      "cost": 0.0177,
+      "citations": 7
+    },
+    {
+      "folder": "보령(구. 보령제약)",
+      "search_key": "보령제약",
+      "status": "ok",
+      "msg": "dt=5.2s",
+      "tokens": 1025,
+      "cost": 0.01532,
+      "citations": 5
+    },
+    {
+      "folder": "부산롯데호텔",
+      "search_key": "부산롯데호텔",
+      "status": "ok",
+      "msg": "dt=5.2s",
+      "tokens": 1068,
+      "cost": 0.01595,
+      "citations": 5
+    },
+    {
+      "folder": "씨제이프레시웨이",
+      "search_key": "CJ프레시웨이",
+      "status": "ok",
+      "msg": "dt=8.1s",
+      "tokens": 1220,
+      "cost": 0.01822,
+      "citations": 9
+    },
+    {
+      "folder": "알씨아이파이낸셜서비스코리아",
+      "search_key": "RCI Financial Services Korea",
+      "status": "ok",
+      "msg": "dt=6.5s",
+      "tokens": 1160,
+      "cost": 0.01733,
+      "citations": 6
+    },
+    {
+      "folder": "에스케이디스커버리",
+      "search_key": "SK디스커버리",
+      "status": "ok",
+      "msg": "dt=7.9s",
+      "tokens": 1227,
+      "cost": 0.01832,
+      "citations": 7
+    },
+    {
+      "folder": "에스케이스페셜티(구. 에스케이머티리얼즈)",
+      "search_key": "SK스페셜티",
+      "status": "ok",
+      "msg": "dt=6.6s",
+      "tokens": 1064,
+      "cost": 0.01589,
+      "citations": 10
+    },
+    {
+      "folder": "에스케이실트론",
+      "search_key": "SK실트론",
+      "status": "ok",
+      "msg": "dt=18.6s",
+      "tokens": 1819,
+      "cost": 0.02723,
+      "citations": 7
+    },
+    {
+      "folder": "에스케이온",
+      "search_key": "SK온",
+      "status": "ok",
+      "msg": "dt=6.5s",
+      "tokens": 1212,
+      "cost": 0.01814,
+      "citations": 9
+    },
+    {
+      "folder": "에이치라인해운",
+      "search_key": "H-Line해운",
+      "status": "ok",
+      "msg": "dt=6.0s",
+      "tokens": 1161,
+      "cost": 0.01735,
+      "citations": 7
+    },
+    {
+      "folder": "한솔제지",
+      "search_key": "한솔제지",
+      "status": "ok",
+      "msg": "dt=6.2s",
+      "tokens": 1119,
+      "cost": 0.01673,
+      "citations": 9
+    },
+    {
+      "folder": "한솔케미칼",
+      "search_key": "한솔케미칼",
+      "status": "ok",
+      "msg": "dt=6.8s",
+      "tokens": 1280,
+      "cost": 0.01912,
+      "citations": 6
+    },
+    {
+      "folder": "한일시멘트",
+      "search_key": "한일시멘트",
+      "status": "ok",
+      "msg": "dt=5.6s",
+      "tokens": 1142,
+      "cost": 0.01706,
+      "citations": 7
+    },
+    {
+      "folder": "한화리츠",
+      "search_key": "한화리츠",
+      "status": "ok",
+      "msg": "dt=17.2s",
+      "tokens": 1788,
+      "cost": 0.02676,
+      "citations": 9
+    },
+    {
+      "folder": "현대로템",
+      "search_key": "현대로템",
+      "status": "ok",
+      "msg": "dt=6.3s",
+      "tokens": 1197,
+      "cost": 0.01791,
+      "citations": 9
+    },
+    {
+      "folder": "현대리바트",
+      "search_key": "현대리바트",
+      "status": "ok",
+      "msg": "dt=6.4s",
+      "tokens": 1233,
+      "cost": 0.01843,
+      "citations": 5
+    },
+    {
+      "folder": "현대비앤지스틸",
+      "search_key": "현대비앤지스틸",
+      "status": "ok",
+      "msg": "dt=7.0s",
+      "tokens": 1267,
+      "cost": 0.01891,
+      "citations": 8
+    },
+    {
+      "folder": "에스케이네트웍스서비스",
+      "search_key": "SK네트웍스서비스",
+      "status": "ok",
+      "msg": "dt=6.5s",
+      "tokens": 1209,
+      "cost": 0.01804,
+      "citations": 8
+    }
+  ],
+  "total_cost": 0.35163,
+  "ok": 18,
+  "skip": 1,
+  "fail": 0,
+  "completed_at": "2026-04-26T07:53:03.199989+00:00"
+}

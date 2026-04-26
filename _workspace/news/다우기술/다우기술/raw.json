@@ -1,0 +1,115 @@
+{
+  "id": "9a378e7e-e469-4859-b6bf-5702b18b2fd7",
+  "model": "sonar-pro",
+  "created": 1777188485,
+  "usage": {
+    "prompt_tokens": 504,
+    "completion_tokens": 647,
+    "total_tokens": 1151,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00151,
+      "output_tokens_cost": 0.00971,
+      "request_cost": 0.006,
+      "total_cost": 0.01722
+    }
+  },
+  "citations": [
+    "https://www.dowjones.com/ko/business-intelligence/risk/products/risk-data-feeds-apis/",
+    "https://blog.naver.com/passerby4/221591633479",
+    "https://www.catch.co.kr/Comp/AnalysisCompView?ID=3480",
+    "https://kr.investing.com/news/markets/article-996228",
+    "https://elec4.co.kr/contents/article_detail?article_idx=22519",
+    "https://daou.co.kr",
+    "https://m.daou.co.kr/ko/ir/inforamation",
+    "https://www.youtube.com/watch?v=BCM_4JT9S94",
+    "https://www.daouidc.com/addservice/security.do"
+  ],
+  "search_results": [
+    {
+      "title": "귀사시스템에 직접 제공되는 리스크 데이터 - Dow Jones",
+      "url": "https://www.dowjones.com/ko/business-intelligence/risk/products/risk-data-feeds-apis/",
+      "date": "2026-03-16",
+      "last_updated": "2026-04-14",
+      "snippet": "Ad Hoc 검색 API로 온보딩 솔루션을 강화할 수 있습니다. 이 API는 개인 또는 기관에 대한 신속한 검색 요청을 Dow Jones 서버로 전송해, 당사의 독자적 리스크 ...",
+      "source": "web"
+    },
+    {
+      "title": "다우존스 - 네이버 블로그",
+      "url": "https://blog.naver.com/passerby4/221591633479",
+      "date": "2019-07-22",
+      "last_updated": "2025-06-30",
+      "snippet": "수신인들의 이름이 영어 외에 적히는 경우를 대비해서 한글, 중국어, 일어를 포함한 다수의 원어 이름 검색 및 표기가 가능하다. 가장 큰 장점은 OFAC, UN ...",
+      "source": "web"
+    },
+    {
+      "title": "다우기술 분석리포트 2025 ver. - 실전형 기업분석ㅣ 캐치",
+      "url": "https://www.catch.co.kr/Comp/AnalysisCompView?ID=3480",
+      "date": "2025-05-20",
+      "last_updated": "2025-08-06",
+      "snippet": "다우기술 분석리포트에서 사업현황과 산업동향, 합격 전략까지 한눈에 확인하세요. | 다우기술은 1986년 설립된 IT 서비스 전문 기업으로, ...",
+      "source": "web"
+    },
+    {
+      "title": "\"기업문서 공유 어디서나 자유롭게\"...다우기술, 강력한 보안 갖춘 ...",
+      "url": "https://kr.investing.com/news/markets/article-996228",
+      "date": "2024-01-31",
+      "last_updated": "2025-03-15",
+      "snippet": "이에 다우기술은 근무 환경과 대상에 관계 없이 자유롭게 문서를 공유할 수 있도록 하는 클라우드형 문서 플랫폼 '다우싱크'를 개발했다. 다우싱크는 ...",
+      "source": "web"
+    },
+    {
+      "title": "다우기술, 그룹웨어 도입 시 가장 많이 검색하는 키워드는 메일 - elec4",
+      "url": "https://elec4.co.kr/contents/article_detail?article_idx=22519",
+      "date": "2019-02-13",
+      "last_updated": "2026-01-13",
+      "snippet": "다우기술은 그룹웨어 도입을 검토 중인 담당자들이 가장 많이 검색하는 키워드로 메일, 전자결재, 메신저, 모바일, 근태관리가 Top5를 차지했다고 13 ...",
+      "source": "web"
+    },
+    {
+      "title": "다우기술",
+      "url": "https://daou.co.kr",
+      "last_updated": "2026-03-12",
+      "snippet": "다우기술은 기업이 고객과 소통할 수 있는 다양한 마케팅 툴을 제공하고 있습니다. 간편한 서비스의 시작. 커머스가 있는 분야라면 어느 공간 ...",
+      "source": "web"
+    },
+    {
+      "title": "IR 공시정보 - 다우기술",
+      "url": "https://m.daou.co.kr/ko/ir/inforamation",
+      "last_updated": "2026-03-18",
+      "snippet": "정기공시; 주요사항보고 선택 주요사항보고; 발행공시 선택 발행공시; 지분공시 선택 지분공시; 기타공시 선택 기타공시; 외부감사관련 선택 외부감사관련; 펀드공시 ...",
+      "source": "web"
+    },
+    {
+      "title": "다우기술 서비스 소개 | AI가 만듦 - YouTube",
+      "url": "https://www.youtube.com/watch?v=BCM_4JT9S94",
+      "date": "2024-12-30",
+      "last_updated": "2026-02-02",
+      "snippet": "다우기술 서비스 소개 영상입니다. AI를 활용한 이미지, 영상, 음성으로 제작하였습니다. 서비스에 대해 더 알아보고 싶은 분들은 daou.com 에서 ...",
+      "source": "web"
+    },
+    {
+      "title": "원격관제 - 다우IDC",
+      "url": "https://www.daouidc.com/addservice/security.do",
+      "date": "2024-04-17",
+      "last_updated": "2025-09-15",
+      "snippet": "다우IDC의 강력한 보안서비스로 고객님의 정보를 안전하게 지켜드리겠습니다. ... 다우기술의 40년 기술 노하우가 집약된 다우IDC는 고객의 성공적인 비즈니스를 ...",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\n다우기술은 IT 서비스(그룹웨어, 클라우드 문서 플랫폼, IDC) 중심의 안정적 사업 포트폴리오를 보유하며 최근 '다우싱크' 베타 출시 등 신제품 호재가 부각됨[3][4][5].  \n법적·재무 리스크 관련 최근 6개월 내 특이사항 없음; 검색 결과에서 검찰/금감원 조사, 횡령·배임 의혹 등 부정적 이슈 미발견[1-9].  \n전체적으로 호재 비중 100%, 악재 0%로 투자 매력적이나 지속 모니터링 필요.\n\n### Critical Risk (거버넌스/법적 리스크)\n- **금융당국/수사기관 조사 현황**: 해당 기간 내 특이사항 없음. 기업명(다우기술)+검찰/경찰/금감원/공정위/국세청, 압수수색/소환조사/구속영장/고발/과징금, 횡령/배임/사기/자본시장법/분식회계/중대재해 키워드 조합 검색 결과 해당 없음[1-9]. 오너/경영진(김윤덕 대표 등) 관련 리스크/의혹/논란 미발견.\n- **주요 소송 및 분쟁**: 해당 기간 내 특이사항 없음. IR 공시(정기/주요사항/발행/지분 등)에서 소송·분쟁 관련 내용 없음[7].\n- *특이사항이 없을 경우 '해당 기간 내 특이사항 없음'으로 명기*: 해당 기간 내 특이사항 없음.\n\n### Business & Financials (영업/재무)\n- **실적 추이 및 특이사항**: 1986년 설립 IT 서비스 전문 기업으로 그룹웨어(다우오피스), 클라우드 문서 플랫폼(다우싱크 베타 출시), IDC·보안 서비스 등 데이터센터 포트폴리오 강화 중[3][4][5][6][9].  \n  그룹웨어 검색 트렌드(메일·전자결재·메신저 Top)로 시장 수요 확인; 2014~2018 접속 데이터 기반 안정적 기반[5].  \n  최근 호재: 다우싱크 출시(문서 공유·백업 보장, 38년 IT 노하우 활용)[4]. 실적 변동 요인 명시적 데이터 없으나 사업보고서·IR 공시 통해 안정적 추이 추정[3][7].\n\n### Conclusion\n**투자 주의 등급: 낮음 (Low Risk)**. 법적·거버넌스 리스크 부재와 신사업 호재로 단기 투자 적합; 6개월 추적 결과 악재 미발생하나 IR 공시 지속 확인 권고."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

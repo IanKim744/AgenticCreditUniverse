@@ -1,0 +1,119 @@
+{
+  "id": "537558f2-baf6-4f3d-8bf1-fc7897ebdcf7",
+  "model": "sonar-pro",
+  "created": 1777188989,
+  "usage": {
+    "prompt_tokens": 506,
+    "completion_tokens": 558,
+    "total_tokens": 1064,
+    "search_context_size": "low",
+    "cost": {
+      "input_tokens_cost": 0.00152,
+      "output_tokens_cost": 0.00837,
+      "request_cost": 0.006,
+      "total_cost": 0.01589
+    }
+  },
+  "citations": [
+    "https://www.skspecialty.com/new/kor/html/sustainability/supplychain.asp",
+    "https://www.skspecialty.com",
+    "https://www.korearatings.com/totalSearch.do?q=%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4%EC%8A%A4%ED%8E%98%EC%85%9C%ED%8B%B0",
+    "https://www.skc.co.kr/upload/sustain_report/20210723/SKC_Sustainability_Report_2021_Kor.pdf",
+    "https://stock.pstatic.net/stock-research/company/16/20241118_company_796160000.pdf",
+    "https://www.chemlocus.co.kr/news/view/137348?url=L25ld3MvZGFpbHkvNDUvMTQ%2FY2F0ZWdvcnk9MDQ%3D",
+    "https://www.skspecialty.com/new/kor/pdf/2023_SK%EB%A8%B8%ED%8B%B0%EB%A6%AC%EC%96%BC%EC%A6%88_%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EA%B2%BD%EC%98%81%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+    "https://www.sk-materials.com/new/kor/html/subsidiary/resonac.asp",
+    "https://www.skspecialty.com/new/kor/pdf/2021%20SK%20materials%20SR_Kor.pdf",
+    "https://sk-inc.com/_upload/BUSI/13b5e57d-a7f7-42b9-b178-fd00df5c4169.pdf"
+  ],
+  "search_results": [
+    {
+      "title": "공급망 관리 < 사회 < 지속가능경영 < SK 스페셜티",
+      "url": "https://www.skspecialty.com/new/kor/html/sustainability/supplychain.asp",
+      "date": "2023-10-06",
+      "last_updated": "2025-09-11",
+      "snippet": "SK스페셜티는 경영지원, 분석지원, SHE Risk Check 등 협력사에게 다양한 지원 프로그램을 진행하고 동반성장 간담회를 통해 협력사의 의견을 적극적으로 수렴하고 ...",
+      "source": "web"
+    },
+    {
+      "title": "SK 스페셜티",
+      "url": "https://www.skspecialty.com",
+      "date": "2024-10-10",
+      "last_updated": "2026-04-25",
+      "snippet": "SK스페셜티. 투자정보를 확인하실 수 있습니다. 재무정보. 재무정보를 정확하고 신속하게 제공해 드립니다. 공시정보. 공시정보를 확인하실 수 있습니다. SK specialty. SK ...",
+      "source": "web"
+    },
+    {
+      "title": "통합검색 - 한국기업평가 (Korea Ratings)",
+      "url": "https://www.korearatings.com/totalSearch.do?q=%EC%97%90%EC%8A%A4%EC%BC%80%EC%9D%B4%EC%8A%A4%ED%8E%98%EC%85%9C%ED%8B%B0",
+      "snippet": "검색어 “에스케이스페셜티” 에 대해서 총 103건이 조회되었습니다. 업체별 등급 ... Risk Factor 점검.pdf2026-01-16. 리서치. KR리서치. 잠금 pdf 다운로드 KR RISK ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] SKC_Sustainability_Report_202...",
+      "url": "https://www.skc.co.kr/upload/sustain_report/20210723/SKC_Sustainability_Report_2021_Kor.pdf",
+      "date": "2021-07-22",
+      "snippet": "SK피아이씨글로벌은 SHE 리스크 관리 TF를 구성해 SHE 리스크 제거. 및 감소 활동을 추진할 예정입니다. 또한 SHE 컴플라이언스와 안전문화. 수준진단을 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] SK (034730) - SK스페셜티의 Specialty",
+      "url": "https://stock.pstatic.net/stock-research/company/16/20241118_company_796160000.pdf",
+      "date": "2024-11-18",
+      "snippet": "SK스페셜티는 반도체 및 디스플레이용 특수가스 제조업체로, 시장점유. 율 기준 NF3(삼불화질소) 세계 1위, WF6(육불화텅스텐) 세계 1위,. SiH4(모노실란) ...",
+      "source": "web"
+    },
+    {
+      "title": "SK스페셜티, 한앤컴퍼니가 인수",
+      "url": "https://www.chemlocus.co.kr/news/view/137348?url=L25ld3MvZGFpbHkvNDUvMTQ%2FY2F0ZWdvcnk9MDQ%3D",
+      "date": "2026-04-19",
+      "snippet": "SK가 SK스페셜티의 매각 우선협상대상자로 한앤컴퍼니를 선정했다. SK는 9월13일 복수의 잠재 매수자를 대상으로 예비입찰을 진행했으며 잠재 매수자 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] 2023 지속가능경영보고서 - SK 스페셜티",
+      "url": "https://www.skspecialty.com/new/kor/pdf/2023_SK%EB%A8%B8%ED%8B%B0%EB%A6%AC%EC%96%BC%EC%A6%88_%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%EA%B2%BD%EC%98%81%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+      "date": "2023-07-31",
+      "last_updated": "2024-02-03",
+      "snippet": "•연구실 정밀안전진단 (SK머티리얼즈 퍼포먼스). 환기 시스템. •국소 ... 확인된 리스크에 대. 한 개선을 진행하는 등 협력사 ESG 리스크 관리 체계 ...",
+      "source": "web"
+    },
+    {
+      "title": "SK레조낙 < 자회사 < SK ecoplant materials",
+      "url": "https://www.sk-materials.com/new/kor/html/subsidiary/resonac.asp",
+      "last_updated": "2026-04-20",
+      "snippet": "SK레조낙은 일본 Resonac 社와 함께 설립한 합작법인으로서, 수입의존도가 높은 고난이도 식각 가스를 국산화하여 국내 기술 자립도를 제고하며 반도체 식각 가스 분야의 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] SK materials SUSTAINABILITY REPORT 2021",
+      "url": "https://www.skspecialty.com/new/kor/pdf/2021%20SK%20materials%20SR_Kor.pdf",
+      "last_updated": "2026-03-28",
+      "snippet": "본 보고서는 SK머티리얼즈의 ESG(Environment·Social·Governance, 환경·사회·지배구조) 관련 성과 및 계획을 담은 첫 번. 째 지속가능경영보고서입니다. 이를 통해 다양한 ...",
+      "source": "web"
+    },
+    {
+      "title": "[PDF] 2 - SK주식회사",
+      "url": "https://sk-inc.com/_upload/BUSI/13b5e57d-a7f7-42b9-b178-fd00df5c4169.pdf",
+      "date": "2025-08-14",
+      "last_updated": "2026-04-21",
+      "snippet": "금융위원회. 한국거래소 귀중. 2025 년 8 월 14 일. 제출대상법인 유형 : 주권상장법인. 면제사유발생 : 해당사항 없음. 회 사 명 : SK주식회사.",
+      "source": "web"
+    }
+  ],
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "### Executive Summary\nSK스페셜티는 반도체 특수가스 분야 글로벌 1위 기업으로 안정적 실적과 SK그룹 내 사업 호재를 보유하나, 최근 한앤컴퍼니 인수 추진으로 지배구조 변화 리스크가 부각됨.  \n법적·수사 리스크는 확인되지 않았으며, ESG 리스크 관리는 내부적으로 강화 중.  \n호재(사업 성장) 비중 70%, 악재(인수 불확실성) 비중 30%.\n\n### Critical Risk (거버넌스/법적 리스크)\n**해당 기간 내 특이사항 없음.**  \n검찰/경찰/금감원/공정위/국세청 조사, 압수수색/소환조사/구속영장/고발/과징금, 횡령/배임/사기/자본시장법/분식회계/중대재해 관련 사건 추적 결과(6개월 시계열) 없음. 오너/경영진(예: SK그룹 관련) 리스크 의혹도 미확인[1][2][3][5][6][7].  \n단, SK그룹 내 지속가능경영보고서에서 ESG 리스크 평가 체계 운영 중이며, 협력사 고위험 관리 계획 있음[1][7].\n\n### Business & Financials (영업/재무)\nSK스페셜티는 반도체·디스플레이용 특수가스(NF3 세계 1위, WF6·SiH4 1위) 제조사로 글로벌 Top-tier 지위 유지[2][5].  \nSK머티리얼즈 자회사로서 공급망/ESG 리스크 관리 강화(협력사 평가, 동반성장 프로그램)[1][7].  \n202?년 한앤컴퍼니 인수 우선협상대상자 선정(9월 예비입찰 후)으로 SK그룹 매각 추진 중, 재무정보·공시 안정적이나 인수 완료 시 실적 변동 가능[2][6]. 한국기업평가 등급 조회 103건, 리스크 팩터 점검 문서 존재하나 세부 악영향 미확인[3].\n\n### Conclusion\n**투자 주의 등급: 보통 (Hold)**. 법적 리스크 부재로 안정적이나 인수 과정 불확실성 모니터링 필요; 반도체 수요 호조 시 성장 잠재력 높음."
+      },
+      "delta": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "updated": [
+    {
+      "company": "대한해운",
+      "row": 3,
+      "ai": "O",
+      "len": 622
+    },
+    {
+      "company": "에스케이씨",
+      "row": 22,
+      "ai": "△",
+      "len": 715
+    },
+    {
+      "company": "한솔테크닉스",
+      "row": 16,
+      "ai": "△",
+      "len": 625
+    }
+  ],
+  "added": [],
+  "missing_decisions": []
+}
