@@ -350,7 +350,33 @@ def parse_reports(list_items: Iterable[dict]) -> list[Report]:
 
 
 def filter_periodic(reports: Iterable[Report]) -> list[Report]:
-    return [r for r in reports if r.pblntf_detail_ty in PERIODIC_TYPES]
+    """정기보고서 필터.
+
+    - DART list API 응답에 `pblntf_detail_ty` 가 결측인 경우가 있어 (2026-04 관찰),
+      `report_nm` 패턴으로 보강 분류한다 (사업/반기/분기보고서).
+    - 정정 보고서(`[기재정정]`/`[첨부정정]`/`[정정]`)는 본문 zip 누락으로 BadZipFile
+      을 자주 유발하므로 사전 제외한다.
+    """
+    import re as _re
+    keep: list[Report] = []
+    for r in reports:
+        nm = r.report_nm or ""
+        if any(t in nm for t in ("[기재정정]", "[첨부정정]", "[정정]")):
+            continue
+        if r.pblntf_detail_ty in PERIODIC_TYPES:
+            keep.append(r)
+            continue
+        if "사업보고서" in nm:
+            r.pblntf_detail_ty = "A001"
+            keep.append(r)
+        elif "반기보고서" in nm:
+            r.pblntf_detail_ty = "A002"
+            keep.append(r)
+        elif "분기보고서" in nm:
+            m = _re.search(r"\((\d{4})\.(\d{2})\)", nm)
+            r.pblntf_detail_ty = "A003" if (m and m.group(2) == "03") else "A004"
+            keep.append(r)
+    return keep
 
 
 def select_latest_report(

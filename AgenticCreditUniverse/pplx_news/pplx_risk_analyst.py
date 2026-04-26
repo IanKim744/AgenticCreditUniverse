@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """Perplexity risk-analyst report for a given company.
 
-Uses Perplexity's chat/completions endpoint (sonar-pro by default) to run the
-"리스크 분석가" prompt and saves the LLM's synthesized markdown report plus the
-raw API response (with citations).
+Default API: /v1/responses (agent mode) with google/gemini-3.1-pro-preview +
+web_search/fetch_url tools. Pass --api sonar to fall back to /chat/completions
+(Sonar 모델 단독, 도구 없음).
+프롬프트 본문은 prompt_template.py 로 분리되어 있어 코드 변경 없이 튜닝 가능.
 
 Env:
   PERPLEXITY_API_KEY   required
 
 Example:
-  python pplx_risk_analyst.py --name "SK하이닉스" --outdir ./out
+  python pplx_risk_analyst.py --name "에스케이씨" --outdir ./out
 """
 from __future__ import annotations
 
@@ -34,43 +35,10 @@ try:
 except Exception:
     pass
 
+from prompt_template import PROMPT_TEMPLATE, AGENT_INSTRUCTIONS, DEFAULT_DENY_DOMAINS
+
 SONAR_URL = "https://api.perplexity.ai/chat/completions"
 AGENT_URL = "https://api.perplexity.ai/v1/responses"
-
-PROMPT_TEMPLATE = """## 역할 부여
-당신은 기업의 잠재적 위험을 발굴하는 전문 '리스크 분석가(Risk Analyst)'입니다.
-단순한 뉴스 요약이 아니라, 투자자 관점에서 치명적일 수 있는 법적·재무적 리스크를 검증해야 합니다.
-
-## 필수 수행 지침 (Step-by-Step)
-
-1. [일반 검색]과 [리스크 정밀 검색]을 분리하여 수행하십시오.
-   - 일반 검색: 실적, 경영 전략, 신사업 등
-   - 리스크 정밀 검색: 아래 키워드를 조합하여 별도로 검색할 것 (단순 뉴스 검색 금지)
-
-2. **리스크 정밀 검색 키워드 (반드시 포함)**
-   - 기업명 + 검찰/경찰/금감원/공정위/국세청
-   - 기업명 + 압수수색/소환조사/구속영장/고발/과징금
-   - 기업명 + 횡령/배임/사기/자본시장법/분식회계/중대재해
-   - 오너/경영진 이름 + 리스크/의혹/논란
-
-3. 시계열 균형 유지
-   - 가장 최근(1주일 이내) 뉴스뿐만 아니라, 6개월 기간 전체에 걸쳐 발생한 사건의 '진행 경과'를 추적하십시오.
-
-## 출력 양식 (Report Format)
-1. **Executive Summary**: 3줄 요약 (호재와 악재의 비중)
-2. **Critical Risk (거버넌스/법적 리스크)**:
-   - 금융당국/수사기관 조사 현황 (사건명, 진행 단계, 예상 파급력)
-   - 주요 소송 및 분쟁 (소송 가액, 승소 가능성, 재무적 영향)
-   - *특이사항이 없을 경우 '해당 기간 내 특이사항 없음'으로 명기*
-
-3. **Business & Financials (영업/재무)**:
-   - 실적 추이(실적 변동 요인 포함)및 특이사항
-
-4. **Conclusion**: 종합 평가 (투자 주의 등급)
-
-## 분석 대상
-- 대상 기업: {name}
-"""
 
 
 def slugify(text: str, max_len: int = 60) -> str:
@@ -114,7 +82,12 @@ def _post_with_retry(url: str, headers: dict, body: dict,
 
 
 def call_sonar(prompt, api_key, model="sonar-pro", temperature=0.1, max_tokens=4000,
-               timeout=240, max_retries=4, backoff_base=1.7):
+               timeout=240, max_retries=4, backoff_base=1.7, deny_domains=None,
+               recency_filter="year"):
+    """Sonar API. recency_filter: 'hour' | 'day' | 'week' | 'month' | 'year' | None.
+
+    기본값 'year' 로 검색 시점 기준 1년 이내 자료만 사용 (낡은 IR/뉴스 인용 방지).
+    """
     if requests is None:
         raise RuntimeError("requests not installed; pip install requests python-dotenv")
     headers = {
@@ -122,7 +95,7 @@ def call_sonar(prompt, api_key, model="sonar-pro", temperature=0.1, max_tokens=4
         "Content-Type": "application/json",
         "User-Agent": "pplx_risk_analyst/1.0",
     }
-    body = {
+    body: dict[str, Any] = {
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": temperature,
@@ -130,24 +103,27 @@ def call_sonar(prompt, api_key, model="sonar-pro", temperature=0.1, max_tokens=4
         "return_citations": True,
         "return_related_questions": False,
     }
+    if recency_filter:
+        body["search_recency_filter"] = recency_filter
+    if deny_domains:
+        body["search_domain_filter"] = list(deny_domains)[:20]
     return _post_with_retry(SONAR_URL, headers, body, timeout, max_retries, backoff_base)
-
-
-AGENT_INSTRUCTIONS = (
-    "You have web_search and fetch_url tools. Run MULTIPLE targeted searches: "
-    "one set for 일반(실적·전략·신사업), and separate sets for 리스크 정밀 검색 "
-    "(검찰/경찰/금감원/공정위/국세청, 압수수색/소환조사/구속영장/고발/과징금, "
-    "횡령/배임/사기/자본시장법/분식회계/중대재해, 오너/경영진 이름 + 의혹/논란). "
-    "Include Korean-language queries. Cover 최근 6개월 with emphasis on the last 1 week. "
-    "Use citations. Respond fully in Korean following the exact Report Format."
-)
 
 
 def call_agent(prompt, api_key, model="google/gemini-3.1-pro-preview",
                max_output_tokens=6000, web_search=True, timeout=420,
-               max_retries=3, backoff_base=2.0):
+               max_retries=3, backoff_base=2.0, deny_domains=None,
+               search_after_date: str | None = None):
+    """Agent API. search_after_date: 'YYYY-MM-DD' (web_search tool 의 결과를 그 날짜 이후로 제한).
+
+    기본값으로 호출 시각 기준 1년 전 ISO 일자를 적용해 1년 이내 자료만 fetch.
+    """
     if requests is None:
         raise RuntimeError("requests not installed; pip install requests python-dotenv")
+    if search_after_date is None:
+        # 기본 1년 이내
+        from datetime import datetime, timedelta, timezone as _tz
+        search_after_date = (datetime.now(_tz.utc) - timedelta(days=365)).date().isoformat()
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
@@ -159,7 +135,15 @@ def call_agent(prompt, api_key, model="google/gemini-3.1-pro-preview",
         "max_output_tokens": max_output_tokens,
     }
     if web_search:
-        body["tools"] = [{"type": "web_search"}, {"type": "fetch_url"}]
+        ws_tool: dict[str, Any] = {"type": "web_search"}
+        filters: dict[str, Any] = {}
+        if deny_domains:
+            filters["search_domain_filter"] = list(deny_domains)[:20]
+        if search_after_date:
+            filters["search_after_date_filter"] = search_after_date
+        if filters:
+            ws_tool["filters"] = filters
+        body["tools"] = [ws_tool, {"type": "fetch_url"}]
         body["instructions"] = AGENT_INSTRUCTIONS
     return _post_with_retry(AGENT_URL, headers, body, timeout, max_retries, backoff_base)
 
@@ -211,11 +195,11 @@ def render_report_md(name: str, answer_md: str, citations: list[str], meta: dict
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Perplexity risk-analyst report")
-    ap.add_argument("--name", required=True, help="기업명 (예: SK하이닉스)")
+    ap.add_argument("--name", required=True, help="기업명 (예: 에스케이씨)")
     ap.add_argument("--outdir", default="./out", help="저장 폴더")
-    ap.add_argument("--api", choices=["sonar", "agent"], default="sonar",
-                    help="sonar: /chat/completions (Sonar 모델 전용). "
-                         "agent: /v1/responses (Gemini/GPT/Claude 등 서드파티 + tools)")
+    ap.add_argument("--api", choices=["sonar", "agent"], default="agent",
+                    help="agent: /v1/responses (Gemini 등 + web_search/fetch_url, 기본). "
+                         "sonar: /chat/completions (Sonar 모델 단독, 도구 없음)")
     ap.add_argument("--model", default=None,
                     help="sonar-pro|sonar-reasoning-pro|sonar-deep-research (sonar api) "
                          "혹은 google/gemini-3.1-pro-preview, openai/gpt-5.4, "
@@ -226,6 +210,10 @@ def main(argv: list[str] | None = None) -> int:
                     help="sonar: max_tokens / agent: max_output_tokens")
     ap.add_argument("--no-web-search", action="store_true",
                     help="agent api에서 web_search 도구를 비활성화")
+    ap.add_argument("--no-domain-filter", action="store_true",
+                    help="search_domain_filter denylist 적용을 건너뜀(디버그)")
+    ap.add_argument("--deny-extra", nargs="*", default=[],
+                    help="1회용 추가 차단 도메인 (예: --deny-extra '-judal.co.kr')")
     args = ap.parse_args(argv)
 
     api_key = os.environ.get("PERPLEXITY_API_KEY")
@@ -241,14 +229,18 @@ def main(argv: list[str] | None = None) -> int:
     outdir = Path(args.outdir) / slug
     outdir.mkdir(parents=True, exist_ok=True)
 
+    deny = [] if args.no_domain_filter else (DEFAULT_DENY_DOMAINS + list(args.deny_extra))[:20]
+
     now = datetime.now(timezone.utc).isoformat()
-    print(f"[1/2] Calling Perplexity {args.api} ({args.model}) for {args.name} …", file=sys.stderr)
+    print(f"[1/2] Calling Perplexity {args.api} ({args.model}) for {args.name} "
+          f"(deny={len(deny)}) …", file=sys.stderr)
     if args.api == "sonar":
         resp = call_sonar(
             prompt, api_key,
             model=args.model,
             temperature=args.temperature,
             max_tokens=args.max_tokens,
+            deny_domains=deny,
         )
     else:
         resp = call_agent(
@@ -256,6 +248,7 @@ def main(argv: list[str] | None = None) -> int:
             model=args.model,
             max_output_tokens=max(args.max_tokens, 4000),
             web_search=not args.no_web_search,
+            deny_domains=deny,
         )
 
     # Save raw
@@ -275,6 +268,7 @@ def main(argv: list[str] | None = None) -> int:
         "generated_utc": now,
         "usage": usage,
         "n_citations": len(citations),
+        "search_domain_filter": deny,
     }
     (outdir / "metadata.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8"
