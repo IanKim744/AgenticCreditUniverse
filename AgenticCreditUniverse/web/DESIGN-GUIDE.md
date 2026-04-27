@@ -3,6 +3,19 @@
 > 본 문서는 Claude Code가 본 프로젝트의 화면을 일관되게 구현하기 위한 단일 디자인 명세입니다.
 > 라우팅·데이터·기능 구조는 별도 문서(`enumerated-questing-summit.md` plan v6)를 따르고, **본 문서는 시각/인터랙션만 다룹니다.**
 
+> **v4.2 변경 (2026-04-27)** — 로그인 페이지 cosmic intro 도입:
+> - **§16.5 신규** — `/login` 한정 우주 배경(#08080d) + 단발성 인트로(별 swirl → 페이드아웃 + 타이틀·카드 페이드인) + 로그인 성공 시 dark→light 핸드오프. 다른 라우트는 기존 라이트 테마 무영향.
+> - §16.4 모션 금지 조항을 "§16.5 예외 인정"으로 보정.
+> - §16.1 레이아웃 재구성 — 타이틀 `Hanwha Credit Universe` 를 카드 외부 화면 상단 큼지막하게(`text-5xl ~ text-7xl` responsive) 배치. 카드는 입력 필드(Username/Password) + Sign in 버튼만 포함.
+> - 신규 컴포넌트: `components/cosmic/{BackgroundStars, IntroOverlay, cosmicTransition}` — 외부 라이브러리 0, 순수 Canvas 2D + RAF.
+> - 매 방문 재생 정책(시그니처 모션·시연 가치), `prefers-reduced-motion` skip, 30fps throttle, visibility pause, DPR 스케일링 모두 §16.5 내 명세.
+
+> **v4.2.1 변경 (2026-04-27)** — 인트로 단순화 + 레이아웃 분리:
+> - 별이 텍스트로 모이는 migration phase 폐기 — 사용자 피드백("모이는 모양이 아름답지 않다"). 인트로는 swirl(0–2.4s) → 페이드아웃(2.4–3.9s) 의 2단계로 단순화.
+> - 동시에 타이틀 + 카드가 1.2s 페이드인(opacity 0→1, ease-out) — 별이 사라지면서 UI 가 자연스럽게 emerges.
+> - 타이틀을 카드 외부 화면 상단으로 분리(이전: 카드 내부 `text-3xl`). 카드는 inputs + button 만 보유.
+> - `useTextTargets.ts` 삭제(텍스트 픽셀 샘플링 더 이상 사용 안 함).
+
 > **v4.1 변경 (2026-04-26)** — 6개 UX 개선 + 단기등급 매핑 + 분포차트 8 버킷:
 > - §2.3 신용등급 시맨틱 컬러: 6 버킷 → **8 버킷 그라데이션** (AA-↑ / A+ / A0 / A- / BBB+ / BBB0 / BBB- / BB+↓), 토큰 `--rating-tier-1`~`-8`. **단기등급(A1 / A2± / A3±)도 동일 hue 라인에 매핑**(예: A2+ ≡ A+ tier-2). 옛 토큰은 호환 별칭.
 > - §4.6 종목 상세 우측 컬럼: TOC 단독(180px) → **검수 액션 패널 + TOC 단일 sticky 사이드바(320px)**. 페이지 스크롤 무관하게 검수 액션이 항상 노출.
@@ -742,53 +755,108 @@ PoC는 단일 계정 인증 (id `risk` / pw `1962`). 미인증 접근은 모두 
 ```
 ┌────────────────────────────────────────────────┐
 │                                                │
-│              ┌──────────────────┐              │
-│              │                  │              │
-│              │ Credit Universe  │              │
-│              │                  │              │
-│              │  ┌────────────┐  │              │
-│              │  │ 아이디     │  │              │
-│              │  └────────────┘  │              │
-│              │  ┌────────────┐  │              │
-│              │  │ 비밀번호   │  │              │
-│              │  └────────────┘  │              │
-│              │                  │              │
-│              │  [   로그인   ]  │              │
-│              │                  │              │
-│              └──────────────────┘              │
+│       Hanwha Credit Universe   (text-5xl~7xl)  │
+│                                                │
+│              ┌──────────────────────┐          │
+│              │  ┌────────────────┐  │          │
+│              │  │ Username       │  │          │
+│              │  └────────────────┘  │          │
+│              │  ┌────────────────┐  │          │
+│              │  │ Password       │  │          │
+│              │  └────────────────┘  │          │
+│              │                      │          │
+│              │  [    Sign in    ]   │          │
+│              └──────────────────────┘          │
 │                                                │
 └────────────────────────────────────────────────┘
 ```
 
-- 페이지 컨테이너: `min-h-screen flex items-center justify-center bg-background px-6`
-- 카드: `w-full max-w-sm rounded-xl border bg-card p-8` + `--shadow-elevated`
-- 로고 영역: 중앙 정렬 텍스트만 — 타이틀 `text-3xl font-semibold tracking-tight` ("Credit Universe"). 아이콘/서브타이틀 없음.
+- 페이지 컨테이너: `relative min-h-screen flex flex-col items-center px-6 pt-20 pb-20` (배경은 §16.5 cosmic mode가 `body.cosmic-mode` 로 처리)
+- **타이틀**: 카드 외부 화면 상단 — `text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight`, 색 `#f0ebe0`, `letter-spacing: -0.02em`, 부드러운 텍스트 그림자(`textShadow: 0 2px 24px rgba(240,235,224,.18)`). 인트로 동안 opacity 0 → 1 (1200ms ease-out).
+- 카드: `my-auto w-full max-w-sm rounded-xl p-8` + 다크 적합 인라인 스타일 (`background: rgba(255,255,255,.04)`, `border: rgba(255,255,255,.10)`, `backdrop-filter: blur(10px)`, 깊은 drop shadow). 입력(Username/Password) + Sign in 버튼만 포함. shadcn `Card` 자체는 미변경 — 인라인 override 만. `my-auto` 로 타이틀 아래 잔여 공간에 수직 중앙 정렬.
 - 입력 사이 간격: `space-y-3`
-- Primary 버튼: `w-full` + `Button size="default" variant="default"` (가이드 §6.6)
+- Primary 버튼: `w-full` + 다크 적합 인라인 스타일 (`background: rgba(255,255,255,.10)`, `border: rgba(255,255,255,.15)`, `text-white`)
 
 ### 16.2 컴포넌트 매핑
 
-| 영역 | shadcn 프리미티브 |
-|---|---|
-| 카드 | `Card` |
-| 입력 (id, pw) | `Input` (type="text" / "password") |
-| 라벨 | `Label` (위쪽 정렬, `text-xs font-medium text-muted-foreground`) |
-| 버튼 | `Button` (variant=default, size=default, w-full) |
-| 에러 메시지 | §10.3 에러 컨테이너 패턴 (border-destructive/30, bg-destructive/5) |
+| 영역 | shadcn 프리미티브 | 다크 적합 처리 |
+|---|---|---|
+| 카드 | `Card` | 인라인 `background/border` + `backdrop-filter: blur(10px)` |
+| 입력 (Username, Password) | `Input` (type="text" / "password") | 인라인 `background: rgba(255,255,255,.05)`, `border: rgba(255,255,255,.10)`, `text-white placeholder:text-white/30` |
+| 라벨 | `Label` (위쪽 정렬, `text-xs font-medium`) | 인라인 색 `rgba(255,255,255,.60)` |
+| 버튼 | `Button` (variant=default, size=default, w-full) | 인라인 `background: rgba(255,255,255,.10)` + `text-white` |
+| 에러 메시지 | inline 컨테이너 | `color: #fca5a5`, `bg: rgba(248,113,113,.06)`, `border: rgba(248,113,113,.30)` (다크 배경 가독성) |
 
 ### 16.3 인터랙션
 
 - 엔터 키 → 자동 제출
-- 잘못된 자격 → 카드 하단에 인라인 에러 (`text-sm text-destructive`)
-- 성공 → `/`(매트릭스)로 이동
-- 로딩: 버튼 안 `Loader2 animate-spin` + "로그인 중…" 라벨 + disabled
+- 잘못된 자격 → 카드 하단에 인라인 에러 ("Invalid username or password.")
+- 성공 → §16.5 cosmic handoff 700ms → 그 700ms 중 t=550ms 시점에 `window.location.href = "/"` (매트릭스 진입). 카드는 동시에 dissolve.
+- 로딩: 버튼 안 `Loader2 animate-spin` + "Signing in…" 라벨 + disabled. 핸드오프 동안 disabled 유지.
 - 자동 로그인 / 비밀번호 찾기 / 회원가입 링크 **모두 없음** (PoC 단일 계정)
+- 자동 포커스: Username 입력은 인트로 `onComplete` 후 후행 focus (모바일 키보드 조기 노출 방지)
 
 ### 16.4 시각 톤
 
 - 헤더/푸터 없음 — 전체 화면 단순 레이아웃
 - 다른 페이지보다 **여백을 더 많이** 사용 (entry point 인상)
-- 모션은 §11 위치가 아니므로 **사용 금지** (페이드인 등)
+- 모션은 §11 위치가 아니므로 **사용 금지** — 단 **§16.5의 cosmic intro/handoff 는 명시적 예외** (단발성 + a11y 가드 + 다른 라우트 무영향)
+- 다크 우주 배경(#08080d)은 §16.5 가 정의한 `body.cosmic-mode` 토글로만 적용. 다른 라우트는 기존 라이트 토큰 그대로
+
+---
+
+### 16.5 Cosmic Intro & Background (예외 조항)
+
+`/login` 라우트 한정으로 다음 모션 시퀀스를 허용한다. 다른 라우트(매트릭스/종목 상세/잡 등)는 이 섹션의 영향이 0 — `body.cosmic-mode` 클래스가 LoginPage `useEffect` cleanup 에서 자동 해제됨.
+
+#### 16.5.1 시퀀스 (총 ~7.6s, 매 방문 재생)
+
+| Phase | 시간 | 캔버스 / 대상 | 동작 |
+|---|---|---|---|
+| 1 Swirl | 0–2200ms | IntroOverlay (z=50) | 250 별(`#f0ebe0`) + 120 dust 가 viewport 중심에서 polar swirl. **느린 회전** — 별 omega 0.15–0.40 rad/sec (~9–23°/sec), dust 0.10 rad/sec (~6°/sec). 각 입자 `{r, theta, omega, jitter}` 독립. fadeAlpha=1. |
+| 2 Fade-out | 2200–6200ms | IntroOverlay | 별/dust fadeAlpha 1→0 (4000ms, **LINEAR** = `1 - t` — 4초 내내 균등하게 감소, 어느 시점도 가속 없음). t=6200 에 캔버스 element `parentNode.removeChild`. |
+| 3 Reveal | t=4000ms 시작 | DOM (corners → hero → card) | t=4000 (Phase 2 ~45% 진행 시점)에 `onComplete()` 발화 → corner labels (delay 0ms) → hero (delay 300ms) → card (delay 600ms) 순으로 모두 opacity 0→1 + translateY(10→0), `3000ms cubic-bezier(0.16, 1, 0.3, 1)` ease-out-expo. Phase 2 와 2.2s 크로스페이드 → 별이 균등하게 사라지는 동안 UI 가 점진적으로 emerge. |
+| 4 Ambient | 영구 | BackgroundStars (z=-1) | 175 별이 viewport 전역 저속 drift + twinkle. 분당 평균 2–3 shooting stars. 30fps throttle. |
+| 5 Handoff | 로그인 200 OK 시 700ms | BackgroundStars + body | 별 viewport 중앙 → 방사형 scatter. 캔버스 fillStyle `#08080d` → `#f8f8fc` interp. 동시에 `body.cosmic-handoff` 토글로 CSS body bg 가 `var(--background)` 로 페이드. t=550ms 에 `window.location.href = "/"`. |
+
+> **설계 노트:**
+> - v4.2 초안에서는 별이 텍스트 픽셀로 모이는 migration phase 가 있었으나, 시각적 완성도가 낮아 폐기. swirl → 동시 페이드 전환이 오히려 깔끔하고 우주적 느낌을 강화함.
+> - 2026-04-27 reveal 길이 1.4→1.8→3.0s 단계적 확장. 사용자 피드백("딱딱한 느낌")을 2.2s 크로스페이드 윈도우 + 3s ease-out-expo reveal 로 해소.
+> - **2026-04-27 (3차)**: 회전 omega 약 60% 감속 + 페이드 곡선 cubic ease-in → linear 로 변경 + 페이드 길이 3.0s → 4.0s 확장. 사용자 피드백("회전이 빠르고 사라지는 게 급함") 정밀 대응 — cubic ease-in 은 처음엔 lingering 후 끝에서 가속이라 perceived "급함"의 원인이었음. linear 는 4초 내내 균등 감소.
+
+#### 16.5.2 매 방문 재생 정책
+
+- 매 진입: reduced-motion 비설정이면 IntroOverlay 항상 마운트 → 7.6s 시퀀스 재생
+- 시그니처 모션이자 데모의 첫인상 — 한 번만 보여주면 시연/공유 가치가 손상됨 (이전 sessionStorage 기반 1회 정책은 2026-04-27 폐기)
+- BackgroundStars 는 intro 여부와 무관하게 항상 마운트 (Phase 4)
+
+#### 16.5.3 접근성 (`prefers-reduced-motion: reduce`) — IntroOverlay 예외
+
+- **IntroOverlay 는 prefers-reduced-motion 을 무시하고 모든 사용자에게 항상 재생** — 시연/심사 컨텍스트의 시그니처 모션이라 OS 설정으로 silent-skip 되면 안 됨 (2026-04-27 이전 정책에서 변경). Trade-off: a11y < demo first-impression. 사내 시연 종료 후 일반 운영 전환 시 재검토 권장.
+- BackgroundStars 의 별 속도 0, twinkle 진폭 0.15 → 0, shooting stars 비활성. 별 자체는 정적 렌더 — 우주 배경 인지는 유지 (이건 reduced-motion 존중 유지).
+- runLoginHandoff 도 즉시 onMidFade 호출 (스캐터/페이드 skip).
+
+#### 16.5.4 성능
+
+- 30fps throttle (`if (now - last < 1000/30) return`)
+- `document.visibilityState === 'hidden'` 시 RAF 중단 + 가시 복귀 시 timeline 보정 (점프 X)
+- DPR 스케일링 (`canvas.width = w * dpr`, `ctx.setTransform(dpr,0,0,dpr,0,0)`)
+- Resize debounce 150ms — 별을 새 viewport 비율로 **재배치** (snap X)
+
+#### 16.5.5 컴포넌트 SSOT
+
+| 파일 | 책임 |
+|---|---|
+| `components/cosmic/BackgroundStars.tsx` | Phase 3 ambient + Phase 4 handoff (imperative `triggerHandoff()` ref) |
+| `components/cosmic/IntroOverlay.tsx` | Phases 1–2 (swirl + 페이드아웃), self-removing 캔버스 |
+| `components/cosmic/cosmicTransition.ts` | `runLoginHandoff()` — 카드 dissolve + bg handoff + 시점 분기 nav |
+
+> 신규 인트로/배경 관련 모션은 모두 본 §16.5 SSOT 컴포넌트 안에서만 추가/수정. 외부 라이브러리(framer-motion 등) 도입 금지 — 순수 Canvas 2D + RAF 유지.
+
+#### 16.5.6 색상 / 토큰
+
+- `#08080d` (우주 배경), `#f0ebe0` (별 색), `#f8f8fc` (handoff 종착 라이트 톤) — 본 섹션 1회성 hex. **§2 토큰 시스템에 추가하지 않음** (다른 라우트가 사용할 일 없음)
+- 카드/Input/Button 다크 적합 색은 인라인 `style` 만 사용 — shadcn 컴포넌트 자체나 `@theme inline` 토큰 미터치
 
 ---
 

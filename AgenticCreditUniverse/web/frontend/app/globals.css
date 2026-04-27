@@ -114,3 +114,16 @@ body {
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
+
+/* === Login 전용 cosmic mode (DESIGN-GUIDE §16.5) ===
+   LoginPage useEffect 가 body 에 cosmic-mode 토글. unmount 시 자동 해제.
+   runLoginHandoff 가 cosmic-handoff 를 추가하면 700ms 동안 라이트 토큰으로 전환. */
+body.cosmic-mode {
+  background: #08080d;
+  color: #f0ebe0;
+  transition: background-color 700ms ease-out, color 700ms ease-out;
+}
+body.cosmic-mode.cosmic-handoff {
+  background: var(--background);
+  color: var(--foreground);
+}
