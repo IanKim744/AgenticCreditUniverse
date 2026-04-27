@@ -1,0 +1,81 @@
+# Build context = HF Space git repo 루트 (Dockerfile 옆).
+# 이 파일은 HF Space 디렉토리에도 같이 복사되므로 동일 룰이 적용됨.
+# Docker 이미지에 들어가는 건 Dockerfile 의 명시적 COPY 만:
+#   - backend/...        (백엔드 코드)
+#   - output/            (Excel + backup)
+#   - _workspace/        (master/comments/judgment/nice/dart/news + index.sqlite seed)
+
+# Python 캐시
+**/__pycache__
+**/*.pyc
+**/*.pyo
+.venv
+venv
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# 노드 / 프론트 빌드 산물
+**/node_modules
+**/.next
+**/.vercel
+**/*.tsbuildinfo
+**/next-env.d.ts
+
+# 다른 모듈 — 백엔드 이미지에 불필요
+AgenticCreditUniverse/dart_scraper
+AgenticCreditUniverse/nicerating_scraper
+AgenticCreditUniverse/comment_generator
+AgenticCreditUniverse/pplx_news
+AgenticCreditUniverse/scripts
+AgenticCreditUniverse/web/Pretendard-1.3.9
+AgenticCreditUniverse/web/PLAN.md
+AgenticCreditUniverse/web/DESIGN-GUIDE.md
+AgenticCreditUniverse/web/README.md
+AgenticCreditUniverse/web/Makefile
+AgenticCreditUniverse/web/.env.example
+AgenticCreditUniverse/web/AGENTS.md
+AgenticCreditUniverse/web/CLAUDE.md
+AgenticCreditUniverse/web/frontend
+AgenticCreditUniverse/web/backend/tests
+
+# Workspace 내 운영에 불필요한 산물 (이미지 비대화 방지)
+_workspace/scripts
+_workspace/merge
+_workspace/pptx_build
+_workspace/comments.v1_backup
+_workspace/dart_batch_run.py
+_workspace/run_pplx_batch.py
+_workspace/merge_run.py
+_workspace/migrate_18cols.py
+_workspace/batch_progress.log
+_workspace/batch_summary.json
+_workspace/jobs.json
+_workspace/index.sqlite
+_workspace/index.sqlite-journal
+output/backup
+
+# Env / secrets
+**/.env
+**/.env.*
+**/*.envrc
+**/secrets.env
+**/secrets.json
+**/credentials.json
+
+# IDE / OS
+.vscode
+.idea
+**/*.swp
+**/*.swo
+**/.DS_Store
+**/Thumbs.db
+
+# Distribution
+**/*.egg-info
+**/dist
+**/build
+
+# Git
+.git
+.github

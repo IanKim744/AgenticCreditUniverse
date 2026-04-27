@@ -12,6 +12,7 @@ Idempotent — drops and recreates schema each run.
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
@@ -19,9 +20,21 @@ from typing import Any
 
 import openpyxl
 
-ROOT = Path("/Users/kim-youngbyeok/AgenticCreditUniverse/AgenticCreditUniverse")
-WS = ROOT / "_workspace"
-XLSX = ROOT / "output" / "26.1H 유니버스.xlsx"
+# 경로는 환경변수 우선. 로컬 개발은 web/.env.example 의 WORKSPACE_DIR/EXCEL_PATH
+# 를 백엔드 .env 에 채워서 실행, 컨테이너 배포는 Dockerfile 의 ENV 가 동일 변수 주입.
+# default 계산은 lazy — 컨테이너 안에서는 parents[4] 가 IndexError 라 env 가 있을 때만 default 우회.
+def _ws_default() -> Path:
+    return Path(__file__).resolve().parents[4] / "_workspace"
+
+
+def _xlsx_default() -> Path:
+    return Path(__file__).resolve().parents[4] / "output" / "26.1H 유니버스.xlsx"
+
+
+_WS_ENV = os.environ.get("WORKSPACE_DIR")
+_XLSX_ENV = os.environ.get("EXCEL_PATH")
+WS = Path(_WS_ENV) if _WS_ENV else _ws_default()
+XLSX = Path(_XLSX_ENV) if _XLSX_ENV else _xlsx_default()
 DB = WS / "index.sqlite"
 SCHEMA = Path(__file__).resolve().parent.parent / "app" / "db_schema.sql"
 
