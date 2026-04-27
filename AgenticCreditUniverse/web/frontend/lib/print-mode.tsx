@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 
 interface PrintModeValue {
   printing: boolean;
@@ -11,6 +11,7 @@ const PrintModeContext = createContext<PrintModeValue | null>(null);
 
 export function PrintModeProvider({ children }: { children: ReactNode }) {
   const [printing, setPrinting] = useState(false);
+  const pendingPrintRef = useRef(false);
 
   useEffect(() => {
     const onAfter = () => setPrinting(false);
@@ -18,13 +19,18 @@ export function PrintModeProvider({ children }: { children: ReactNode }) {
     return () => window.removeEventListener("afterprint", onAfter);
   }, []);
 
-  function requestPrint() {
-    setPrinting(true);
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        window.print();
-      });
+  useEffect(() => {
+    if (!printing || !pendingPrintRef.current) return;
+    pendingPrintRef.current = false;
+    const id = requestAnimationFrame(() => {
+      window.print();
     });
+    return () => cancelAnimationFrame(id);
+  }, [printing]);
+
+  function requestPrint() {
+    pendingPrintRef.current = true;
+    setPrinting(true);
   }
 
   return (
