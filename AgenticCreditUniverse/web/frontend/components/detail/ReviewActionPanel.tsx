@@ -32,9 +32,12 @@ interface Props {
 
 export function ReviewActionPanel({ slug, ai, stage2, inversion, current }: Props) {
   const initial = (current.universe ?? stage2?.final ?? ai ?? "△") as Universe;
+  // SSOT for "AI 판단": Stage 2 풀 검수 우선, 없으면 1차 종목별로 폴백.
+  // 둘 다 없으면 동의 체크의 비교 대상이 없으므로 항상 false 로 유지.
+  const aiTarget: Universe | null = stage2?.final ?? ai;
   const [universe, setUniverse] = useState<Universe>(initial);
   const [agree, setAgree] = useState<boolean>(
-    current.agree_with_ai ?? (stage2 ? universe === stage2.final : true),
+    current.agree_with_ai ?? (aiTarget != null ? initial === aiTarget : false),
   );
   const [note, setNote] = useState(current.note ?? "");
   const [pending, start] = useTransition();
@@ -144,7 +147,7 @@ export function ReviewActionPanel({ slug, ai, stage2, inversion, current }: Prop
               key={v}
               onClick={() => {
                 setUniverse(v);
-                setAgree(stage2 ? v === stage2.final : true);
+                setAgree(aiTarget != null && v === aiTarget);
               }}
               className={cn(
                 "flex-1 rounded-md border py-1.5 text-sm font-medium tabular-nums transition-colors",
@@ -165,7 +168,7 @@ export function ReviewActionPanel({ slug, ai, stage2, inversion, current }: Prop
           onCheckedChange={(c) => {
             const v = !!c;
             setAgree(v);
-            if (v && stage2) setUniverse(stage2.final);
+            if (v && aiTarget) setUniverse(aiTarget);
           }}
         />
         <span>AI 판단에 동의</span>
