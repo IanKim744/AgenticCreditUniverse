@@ -17,7 +17,7 @@ export function AppHeader({
   }
 
   return (
-    <header className="sticky top-0 z-40 h-14 border-b bg-background/85 backdrop-blur">
+    <header className="sticky top-0 z-40 h-14 border-b bg-background/85 backdrop-blur print:hidden">
       <div className="mx-auto flex h-full items-center gap-6 px-6">
         <Link href="/" className="flex items-baseline gap-2 font-semibold tracking-tight">
           <span>Credit Universe</span>

@@ -13,6 +13,7 @@ import {
   ReferenceDot,
 } from "recharts";
 import { RATING_ORDER } from "@/lib/credit";
+import { usePrintMode } from "@/lib/print-mode";
 
 interface TimelinePoint {
   period: string;
@@ -39,6 +40,8 @@ interface Props {
 }
 
 export function Section3Opinion({ id, opinionPdfUrl, opinionMeta, timeline }: Props) {
+  const { printing } = usePrintMode();
+
   // 등급 인덱스 매핑 (낮을수록 우량)
   const data = timeline.map((p) => {
     const longIdx = p.long_grade && p.long_grade !== "-"
@@ -108,11 +111,11 @@ export function Section3Opinion({ id, opinionPdfUrl, opinionMeta, timeline }: Pr
             </a>
           )}
         </div>
-        {opinionPdfUrl ? (
+        {opinionPdfUrl && !printing ? (
           <object
             data={opinionPdfUrl}
             type="application/pdf"
-            className="h-[600px] w-full rounded border"
+            className="h-[600px] w-full rounded border print:hidden"
           >
             <a
               href={opinionPdfUrl}
@@ -123,6 +126,8 @@ export function Section3Opinion({ id, opinionPdfUrl, opinionMeta, timeline }: Pr
               브라우저에서 PDF를 표시할 수 없습니다 — 새 탭에서 열기
             </a>
           </object>
+        ) : opinionPdfUrl ? (
+          <PrintFallback url={opinionPdfUrl} />
         ) : (
           <EmptyState />
         )}
@@ -196,6 +201,25 @@ export function Section3Opinion({ id, opinionPdfUrl, opinionMeta, timeline }: Pr
         )}
       </div>
     </section>
+  );
+}
+
+function PrintFallback({ url }: { url: string }) {
+  return (
+    <div className="flex flex-col items-center gap-2 rounded border border-dashed py-8 text-center">
+      <FileText className="h-8 w-8 text-muted-foreground/40" />
+      <p className="text-sm text-muted-foreground">
+        인쇄에는 PDF 본문이 포함되지 않습니다 — 의견서는 별도 다운로드 후 인쇄하세요.
+      </p>
+      <a
+        href={url}
+        download
+        className="inline-flex items-center gap-1 rounded-md border border-input bg-background px-2.5 py-1 text-xs font-medium hover:bg-accent transition-colors"
+      >
+        <Download className="h-3.5 w-3.5" />
+        의견서 PDF 다운로드
+      </a>
+    </div>
   );
 }
 

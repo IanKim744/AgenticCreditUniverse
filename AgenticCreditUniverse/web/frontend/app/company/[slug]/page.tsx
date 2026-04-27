@@ -11,6 +11,7 @@ import { Section5News } from "@/components/detail/Section5News";
 import { Section6Disclosure } from "@/components/detail/Section6Disclosure";
 import { Section7History } from "@/components/detail/Section7History";
 import { fetchCompanyDetail } from "@/lib/api";
+import { PrintModeProvider } from "@/lib/print-mode";
 
 export default async function CompanyDetailPage({
   params,
@@ -23,10 +24,10 @@ export default async function CompanyDetailPage({
   if (!data) notFound();
 
   return (
-    <>
+    <PrintModeProvider>
       <AppHeader periodLabel={data.period.current} />
       <main className="mx-auto max-w-7xl flex-1 px-6 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 lg:items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 lg:items-start print:block">
           <div className="min-w-0 space-y-8">
             <DetailHeader data={data} />
             <Section1Overview id="sec-overview" data={data} />
@@ -61,7 +62,7 @@ export default async function CompanyDetailPage({
             />
             <Section7History id="sec-history" history={data.history ?? []} />
           </div>
-          <aside className="hidden lg:block lg:sticky lg:top-20 lg:self-start lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto space-y-6">
+          <aside className="hidden lg:block lg:sticky lg:top-20 lg:self-start lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto space-y-6 print:hidden">
             <ReviewActionPanel
               slug={slug}
               ai={data.excel.universe_curr_ai}
@@ -73,6 +74,6 @@ export default async function CompanyDetailPage({
           </aside>
         </div>
       </main>
-    </>
+    </PrintModeProvider>
   );
 }

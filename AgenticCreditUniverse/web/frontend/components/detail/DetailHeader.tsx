@@ -3,6 +3,7 @@ import { RatingBadge } from "@/components/rating-badge";
 import { WatchBadge } from "@/components/watch-badge";
 import { MovementChip, UniverseChip } from "@/components/universe-chip";
 import { parseWatch } from "@/lib/credit";
+import { PrintButton } from "./PrintButton";
 
 interface Props {
   data: {
@@ -26,12 +27,15 @@ export function DetailHeader({ data }: Props) {
   const { excel, master, period } = data;
   return (
     <div className="space-y-3">
-      <Link
-        href="/"
-        className="inline-block text-xs text-muted-foreground hover:text-foreground transition-colors"
-      >
-        ← 전체 목록
-      </Link>
+      <div className="flex items-center justify-between">
+        <Link
+          href="/"
+          className="inline-block text-xs text-muted-foreground hover:text-foreground transition-colors print:hidden"
+        >
+          ← 전체 목록
+        </Link>
+        <PrintButton />
+      </div>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <h1 className="text-2xl font-semibold tracking-tight">{excel.issuer}</h1>
         {master.stock_code && (

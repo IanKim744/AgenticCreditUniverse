@@ -127,3 +127,44 @@ body.cosmic-mode.cosmic-handoff {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* === 인쇄 모드 (종목 상세 페이지) ===
+   PrintButton 의 window.print() 호출 시 chrome 을 숨기고
+   본문이 단일 컬럼으로 흐르도록 정리한다. */
+@media print {
+  main {
+    max-width: none !important;
+    padding: 0 1rem !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .sticky {
+    position: static !important;
+  }
+
+  section,
+  [id^="sec-"] {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  h2,
+  h3 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  .recharts-wrapper,
+  .recharts-responsive-container {
+    width: 100% !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}
