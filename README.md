@@ -155,7 +155,7 @@ make backend    # FastAPI :8787
 make frontend   # Next.js :3000
 ```
 
-`http://localhost:3000` 접속, 단일 계정 PoC 로그인 (`risk` / `1962`).
+`http://localhost:3000` 접속
 
 ---
 
